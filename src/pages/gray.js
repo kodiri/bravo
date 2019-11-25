@@ -1,0 +1,3 @@
+function grayTest() {
+	return 'gray';
+}
