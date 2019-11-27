@@ -6,11 +6,3 @@
 .App {
   text-align: center;
 }
-
-.footer {
-  height: 50px;
-  align-items: center;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  background-color: skyblue;
-}

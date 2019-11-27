@@ -1,24 +1,18 @@
-import React, { useState } from 'react';
-import {
-    BrowserRouter as Router,
-    // Switch,
-    Route,
-  } from "react-router-dom";
-import Terms from './Terms';
-import AboutUs from './AboutUs';
-import AboutApp from './AboutApp';
-import Footer from './Footer';
+import React from 'react';
+import FooterLoggedOut from './Footer/FooterLoggedOut';
+import './Footer/FooterLoggedOut.css';
+import './App.css';
 
-
-
-export default function LandingPage({ page }) {
-
-    if (page === 'About Us'){
-        return(
-            <>
-                <AboutUs />
-            </>
-        );
-    }
-    
+export default function landingPage(){
+    return(
+        <>
+            <h1>Welcome to TAP</h1>
+            <p id='content'>This is the Landing page of the web app TAP</p>
+            <FooterLoggedOut 
+                firstSection='/about-app'
+                secondSection='/about-us'
+                thirdSection='/terms'
+            />
+        </>
+    );
 }
