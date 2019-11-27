@@ -1,3 +1,0 @@
-function lisaFn() {
-    return 'lisa';
-}
