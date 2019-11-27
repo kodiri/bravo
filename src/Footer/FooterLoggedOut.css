@@ -1,0 +1,19 @@
+.footerLoggedOut {
+    margin-top: auto;
+    bottom: 0px;
+    position: fixed;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: rgb(185, 241, 255);
+    text-decoration: none;       
+  }
+.buttonFooterLO {
+    display: flex;
+    color: teal;
+    height: 50px;
+    box-sizing: border-box;
+    align-items: center;
+}
+.linksFooterLO {
+    text-decoration: none;
+}
