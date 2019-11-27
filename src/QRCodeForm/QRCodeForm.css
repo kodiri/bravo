@@ -11,7 +11,7 @@
     text-align: center;
 }
 .QRCodeFormContainer input {
-    width: 240px;
+    width: 260px;
     height: 40px;
     padding-left: 10px;
     border: none;
@@ -27,9 +27,25 @@
 .tapInputRow {
     width: 100%;
     align-content: center;
+    display: flex;
 
 }
-
+.tapInput {
+    flex: 8;
+}
+.firstName {
+    /* flex: 3; */
+}
+.QRCodeFormContainer input[type='checkbox'] {
+    width: 20px;
+    height: 20px;
+    flex: 1;
+    margin-top: 15px;;
+    border: none;
+    opacity: 0.5;
+    background-color: cornflowerblue;
+    border-bottom: 1px solid cornflowerblue;
+}
 .QRCodeFormContainer input[type='submit'] {
     width: 100%;
     background: cornflowerblue;

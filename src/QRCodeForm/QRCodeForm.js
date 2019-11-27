@@ -1,7 +1,7 @@
 import React, { useState }from 'react';
 import './QRCodeForm.css';
 export default function QRCodeForm() {
-    const qrCodeArray = [];
+    
     const [firstName, setFirstName] = useState('');
     const [lastName, setLastName] = useState('');
     const [companyOrg, setCompanyOrg] = useState('');
@@ -54,10 +54,12 @@ export default function QRCodeForm() {
                         value={firstName}
                         onChange={(e)=> setFirstName(e.target.value)}
                     />
+                    <input type="checkbox" name="firstNameCheckBox" value="firstNameCheckBox"></input>
                 </div>
-                <div>
+                <div className='tapInputRow'>
                     <label htmlFor='lastName'>Last name</label>
                     <input 
+                        className='tapInput'
                         id='lastName'
                         type='text'
                         placeholder='Last name'
@@ -65,10 +67,12 @@ export default function QRCodeForm() {
                         value={lastName}
                         onChange={(e)=> setLastName(e.target.value)}
                     />
+                    <input type="checkbox" name="" value=""></input>
                 </div>
-                <div>
+                <div className='tapInputRow'>
                     <label htmlFor='email'>Email</label>
                     <input 
+                        className='tapInput'                    
                         id='email'
                         type='email'
                         placeholder='Email'
@@ -76,10 +80,12 @@ export default function QRCodeForm() {
                         value={email}
                         onChange={(e)=> setEmail(e.target.value)}
                     />
+                    <input type="checkbox" name="" value=""></input>
                 </div>
-                <div>
+                <div className='tapInputRow'>
                     <label htmlFor='companyOrg'>Company</label>
                     <input 
+                        className='tapInput'                    
                         id='companyOrg'
                         type='text'
                         placeholder='Company name'
@@ -87,10 +93,12 @@ export default function QRCodeForm() {
                         value={companyOrg}
                         onChange={(e)=> setCompanyOrg(e.target.value)}  
                     />
+                    <input type="checkbox" name="" value=""></input>
                 </div>
-                <div>
+                <div className='tapInputRow'>
                     <label htmlFor='jobTitle'>Job Title</label>
                     <input 
+                        className='tapInput'                    
                         id='jobTitle'
                         type='text'
                         placeholder='Job title'
@@ -98,20 +106,24 @@ export default function QRCodeForm() {
                         value={jobTitle}
                         onChange={(e)=> setJobTitle(e.target.value)}  
                     />
+                    <input type="checkbox" name="" value=""></input>
                 </div>
-                <div>
+                <div className='tapInputRow'>
                     <label htmlFor='address'>Address</label>
                     <textarea 
+                        className='tapInput'                    
                         id='address'
                         placeholder='Address'
                         name='address'
                         value={address}
                         onChange={(e)=> setAddress(e.target.value)}  
                     />
+                    <input type="checkbox" name="" value=""></input>
                 </div>                
-                <div>
+                <div className='tapInputRow'>
                     <label htmlFor='mobile'>Mobile</label>
                     <input 
+                        className='tapInput'                    
                         id='telTypeCell'
                         type='number'
                         placeholder='Mobile number'
@@ -119,19 +131,25 @@ export default function QRCodeForm() {
                         value={telTypeCell}
                         onChange={(e)=> setTelTypeCell(e.target.value)}                        
                     />
+                    <input type="checkbox" name="" value=""></input>
                 </div>
-                <label htmlFor='telTypeWork'>Work</label>
-                    <input 
-                        id='telTypeWork'
-                        type='number'
-                        placeholder='Work number'
-                        name='telTypeWork'
-                        value={telTypeWork}
-                        onChange={(e)=> setTelTypeWork(e.target.value)}
+                <div className='tapInputRow'>
+                    <label htmlFor='telTypeWork'>Work</label>
+                        <input 
+                        className='tapInput'                        
+                            id='telTypeWork'
+                            type='number'
+                            placeholder='Work number'
+                            name='telTypeWork'
+                            value={telTypeWork}
+                            onChange={(e)=> setTelTypeWork(e.target.value)}
                     />
-                <div>
+                    <input type="checkbox" name="" value=""></input>
+                </div>    
+                <div className='tapInputRow'>
                     <label htmlFor='socialMediaUrl1'>Social Media URL 1</label>
                     <input 
+                        className='tapInput'                    
                         id='url'
                         type='text'
                         placeholder='Social Media URL'
@@ -139,10 +157,12 @@ export default function QRCodeForm() {
                         value={url}
                         onChange={(e)=> setUrl(e.target.value)}
                     />
+                    <input type="checkbox" name="" value=""></input>
                 </div>
-                <div>
+                <div className='tapInputRow'>
                     <label htmlFor='socialMediaUrl2'>Social Media URL 2</label>
                     <input 
+                        className='tapInput'                    
                         id='note'
                         type='text'
                         placeholder='Add. Social Media URL'
@@ -150,6 +170,7 @@ export default function QRCodeForm() {
                         value={note}
                         onChange={(e)=> setNote(e.target.value)}
                     />
+                    <input type="checkbox" name="" value=""></input>
                 </div>                                
                 <input
                     type='submit' 
@@ -160,7 +181,7 @@ export default function QRCodeForm() {
         </div>
         <div className='displayQRCode'>
             {
-                firstName || lastName ? <img alt='qrcode' src={qrUrl}></img> : 'No QR Code yet!'
+                firstName || lastName ? <img alt='qrcode' src={qrUrl}></img> : <h2>No QR Code yet!</h2>
             }
         </div>
     </>
