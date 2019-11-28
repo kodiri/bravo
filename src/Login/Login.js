@@ -43,12 +43,6 @@ export default function Login() {
                 ?
                 <div className="login">
                     <div className="item">
-                        <img 
-                            src={Logo}
-                            alt="logo"
-                        />
-                    </div>
-                    <div className="item">
                         <input 
                         name="email"
                         onChange={loginCheck}placeholder="email or phone" style={{ backgroundColor: error.errorColor}} />
