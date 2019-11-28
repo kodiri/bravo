@@ -2,7 +2,8 @@ import React from 'react';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-import Qr from './qr.png'
+import "./simpleslider.css";
+import Qr from './qr.png';
 
 class SimpleSlider extends React.Component {
   render() {
