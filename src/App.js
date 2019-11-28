@@ -4,9 +4,9 @@ import LandingPage from './LandingPage';
 import Navbar from './pages/lisa_navbar.js';
 import './pages/lisa_navbar.css'
 import './App.css';
+import QRCodeForm from './QRCodeForm/QRCodeForm';
 
 export default function App() {
-
   return (
     <Router>
       <div className='App'>

@@ -1,0 +1,63 @@
+.QRCodeFormContainer {
+    /* background: rgb(0,0,0,0.25); */
+    width: 400px;
+    margin: 0 auto;
+    /* display: flex;
+    flex-direction: column; */
+    text-align: left;
+}
+
+.QRCodeFormContainer h1 {
+    text-align: center;
+}
+.QRCodeFormContainer input {
+    width: 260px;
+    height: 40px;
+    padding-left: 10px;
+    border: none;
+    border-bottom: 1px solid aquamarine;
+}
+.QRCodeFormContainer label {
+    padding: 0 15px;
+    display: inline-block;
+    width: 90px;
+    color: dimgrey;
+    font-size: 14px;
+}
+.tapInputRow {
+    width: 100%;
+    align-content: center;
+    display: flex;
+
+}
+.tapInput {
+    flex: 8;
+}
+.firstName {
+    /* flex: 3; */
+}
+.QRCodeFormContainer input[type='checkbox'] {
+    width: 20px;
+    height: 20px;
+    flex: 1;
+    margin-top: 15px;;
+    border: none;
+    opacity: 0.5;
+    background-color: cornflowerblue;
+    border-bottom: 1px solid cornflowerblue;
+}
+.QRCodeFormContainer input[type='submit'] {
+    width: 100%;
+    background: cornflowerblue;
+    margin-top: 10px;
+    /* margin-bottom: 10px; */
+    color: #fff;
+    font-weight: bold;
+}
+.QRCodeFormContainer textarea {
+    width: 238px;
+    height: 75px;
+    padding-left: 10px;
+    border: none;
+    border-bottom: 1px solid aquamarine;
+}
