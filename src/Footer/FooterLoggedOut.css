@@ -4,12 +4,15 @@
     position: fixed;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    background-color: rgb(185, 241, 255);
-    text-decoration: none;       
+    background-color: rgba(181, 228, 228, 0.596);
+    width: 100%;
+    justify-items: center;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 18px;
   }
 .buttonFooterLO {
     display: flex;
-    color: teal;
+    color: #63B6A2;
     height: 50px;
     box-sizing: border-box;
     align-items: center;
