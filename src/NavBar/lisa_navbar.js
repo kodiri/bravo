@@ -15,23 +15,22 @@ function NavBar() {
             <div className='links'>
                 {
                     page === undefined || page === 'landing' ?
-                        <div>
+                        <>
                             <div><a href='/login'><p className='navLogIn'>Login</p></a></div>
                             <div><a href='/signup'><p className='navSignUp'>Sign Up</p></a></div>
-                        </div> :
+                        </>
+                        :
                         page === 'login' ?
-                            <div>
+                        <>
                                 <div><a href='/landing'><p className='navLanding'>Landing</p></a></div>
                                 <div><a href='/signup'><p className='navSignUp'>Sign Up</p></a></div>
-                            </div> :
+                                </> :
                             page === 'signup' ?
-                                <div>
+                            <>
                                     <div><a href='/landing'><p className='navLanding'>Landing</p></a></div>
                                     <div><a href='/login'><p className='navLogIn'>Login</p></a></div>
-                                </div> :
-                                <div>
+                                    </> :
                                     <div><a href='/settings'><p className='navSettings'><img src ={navSettings}></img></p></a></div>
-                                </div>
                 }
             </div>
         </nav>
