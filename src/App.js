@@ -10,7 +10,7 @@ export default function App() {
   return (
     <Router>
       <div className='App'>
-        <Navbar />
+      <Route path='/:page' component={Navbar}/>
         <Switch>
           <Route exact path='/' component={LandingPage}/>
         </Switch>
