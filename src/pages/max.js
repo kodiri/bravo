@@ -1,3 +1,0 @@
-function maxgTest() {
-	return 'maxgdev';
-}
