@@ -34,9 +34,9 @@
 .tapInput {
     flex: 8;
 }
-.firstName {
-    /* flex: 3; */
-}
+/* .firstName {
+     flex: 3; 
+} */
 .QRCodeFormContainer input[type='checkbox'] {
     width: 20px;
     height: 20px;
