@@ -1,4 +1,5 @@
-.footerContainer {
+.footer {
+    margin-top: auto;
     bottom: 0px;
     position: fixed;
     display: grid;
@@ -7,8 +8,9 @@
     width: 100%;
     justify-items: center;
     font-family: 'Bebas Neue', cursive;
-    font-size: 18px;    
+    font-size: 18px;
   }
+  
 .buttonFooter {
     display: flex;
     color: #63B6A2;

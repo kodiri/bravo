@@ -1,0 +1,69 @@
+#navHeader {
+    display: flex;
+    position: relative;
+    box-sizing: border-box;
+    background-color: rgba(181, 228, 228, 0.596);
+    font-family: 'Bebas Neue', cursive;
+    align-items: center;
+    height: 70px;
+}
+.navLogo {
+    margin: 0px auto;
+    height: 45px;
+    width: 110px;
+}
+img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.links {
+    display: flex;
+    position: absolute;
+    right: 0;
+    font-size: 25px;
+}
+a {
+    text-decoration: none;
+    color: #B69E3C;
+}
+.navLogIn {
+    padding-right: 25px;
+    letter-spacing: 1px;
+    justify-items: center;
+}
+.navSignUp {
+    padding-right: 25px;
+    letter-spacing: 1px;
+    justify-items: center;
+}
+
+.navLogIn2 {
+    padding-right: 25px;
+    padding-top: 11px;
+    letter-spacing: 1px;
+    justify-items: center;
+}
+.navSignUp2 {
+    padding-right: 25px;
+    padding-top: 11px;
+    letter-spacing: 1px;
+    justify-items: center;
+}
+.navSettings {
+    /* i am an icon link */
+    width: 50px;
+    height: 50px;
+    padding-right: 25px;
+}
+.navLanding {
+    width: 50px;
+    height: 50px;
+    padding-right: 35px;
+}
+@media only screen and (max-width: 700px) {
+    .navLogo {
+        margin: 0px;
+        padding-left: 20px;
+    }
+}
