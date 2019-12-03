@@ -14,11 +14,13 @@ export default function QRCodeForm() {
     const [url, setUrl] = useState('');
     const [address, setAddress] = useState('');
     const [qrUrl, setQRUrl] = useState('');
+    const [ firstNameSelected, setFirstNameSelected ] = useState({checked: true});
 
     const handleSubmit = (event)=> {
         event.preventDefault();
         let qrCodeObj = {
             firstName: {firstName},
+            firstNameSelected: {checked: true},
             lastName: {lastName},
             email: {email},
             companyOrg:{companyOrg},
@@ -37,6 +39,9 @@ export default function QRCodeForm() {
         setQRUrl(composeURL);
         console.log(qrUrl);
     }
+    
+    // function to submit selected fields to QR code URL
+
 
     return (
         <>
@@ -54,7 +59,11 @@ export default function QRCodeForm() {
                         value={firstName}
                         onChange={(e)=> setFirstName(e.target.value)}
                     />
-                    <input type="checkbox" name="firstNameCheckBox" value="firstNameCheckBox"></input>
+                    <input 
+                        type="checkbox" 
+                        name="firstNameSelected" 
+                        checked={firstNameSelected.checked} 
+                        onChange={(e)=> setFirstNameSelected(!firstNameSelected.checked)}/>
                 </div>
                 <div className='tapInputRow'>
                     <label htmlFor='lastName'>Last name</label>
