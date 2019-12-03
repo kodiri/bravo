@@ -1,9 +1,10 @@
 import React from 'react';
+import Carousel from '../carousel/SimpleSlider';
 
 const Dashboard = () => {
     return (
         <div>
-            <h1>This is the DASHBOARD page</h1>
+            <Carousel />
         </div>
     );
 };
