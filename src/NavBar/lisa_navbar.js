@@ -9,7 +9,7 @@ function NavBar() {
     let { page } = useParams();
     return (
         <nav id='navHeader'>
-            <a className='navLogo' href='logo'><img src={logo} alt='TAP' /></a>
+            <a className='navLogo' href='logo'><img src={logo} alt='tapLogo' /></a>
             <div className='links'>
                 {
                     page === 'landing' ?
@@ -28,7 +28,7 @@ function NavBar() {
                                     <div><a href='/login'><p className='navLogIn'>Login</p></a></div>
                                 </div> :
                                 <div>
-                                    <div><a href='/settings'><p className='navSettings'><img src ={navSettings}></img></p></a></div>
+                                    <div><a href='/settings'><p className='navSettings'><img src ={navSettings} alt='settingsLogo' ></img></p></a></div>
                                 </div>
                 }
             </div>

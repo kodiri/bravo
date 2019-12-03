@@ -1,4 +1,4 @@
-.footerLoggedOut {
+.footer {
     margin-top: auto;
     bottom: 0px;
     position: fixed;
@@ -10,13 +10,13 @@
     font-family: 'Bebas Neue', cursive;
     font-size: 18px;
   }
-.buttonFooterLO {
+.buttonFooter {
     display: flex;
     color: #63B6A2;
     height: 50px;
     box-sizing: border-box;
     align-items: center;
 }
-.linksFooterLO {
+.linksFooter {
     text-decoration: none;
 }
