@@ -2,15 +2,18 @@ import * as firebase from 'firebase';
 
 // Your web app's Firebase configuration
 var firebaseConfig = {
-apiKey: "AIzaSyDva7Jz0M4Iu5QzdVt2Uttk-mh9E3qK5-A",
-authDomain: "tap-app-12ee9.firebaseapp.com",
-databaseURL: "https://tap-app-12ee9.firebaseio.com",
-projectId: "tap-app-12ee9",
-storageBucket: "tap-app-12ee9.appspot.com",
-messagingSenderId: "543848800624",
-appId: "1:543848800624:web:96b5a97eece7dceae4efb5"
+apiKey: process.env.REACT_APP_API_KEY,
+authDomain: process.env.REACT_APP_AUTH_DOMAIN,
+databaseURL: process.env.REACT_APP_DATABASE_URL,
+projectId: process.env.REACT_APP_PROJECT_ID,
+storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
+messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID,
+appId: process.env.REACT_APP_MESSAGING_APP_ID,
+measurementId: process.env.REACT_APP_MEASUREMENT_ID
 };
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
+firebase.analytics();
 
 export default firebase;
+

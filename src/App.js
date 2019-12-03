@@ -13,7 +13,7 @@ import ProfilePage from './pagesComponents/ProfilePage';
 import NotFound from './pagesComponents/NotFound';
 //import QRCodeForm from './QRCodeForm/QRCodeForm';
 
-const App = () => {
+export default function App() {
   return (
     <Router>
       <div className='App'>
@@ -32,5 +32,3 @@ const App = () => {
     </Router>
   );
 }
-
-export default App;
