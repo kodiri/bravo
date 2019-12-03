@@ -1,16 +1,16 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import LandingPage from './PagesComponents/LandingPage';
+import LandingPage from './LandingPage';
 import Navbar from './NavBar/lisa_navbar.js';
 import './NavBar/lisa_navbar.css'
 import './App.css';
+import QRCodeForm from './QRCodeForm/QRCodeForm';
 import AboutApp from './PagesComponents/AboutApp';
 import AboutUs from './PagesComponents/AboutUs';
 import Terms from './PagesComponents/Terms';
 import Footer from './Footer/Footer';
-// import QRCodeForm from './QRCodeForm/QRCodeForm';
 
-const App = () => {
+export default function App() {
   return (
     <Router>
       <div className='App'>
@@ -26,5 +26,3 @@ const App = () => {
     </Router>
   );
 }
-
-export default App;
