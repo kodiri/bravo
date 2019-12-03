@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, useParams, Redirect } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import './Footer.css';
 
 function Footer() {
@@ -7,7 +7,7 @@ function Footer() {
     return (
         <>
             {
-            page === '/' || page === 'about-us' || page === 'about-app' || page === 'terms' || page === 'sign-in' || page === 'sign-up' ?
+            page === '/' || page === 'about-us' || page === 'about-app' || page === 'terms' || page === 'signin' || page === 'signup' ?
                 <footer className='footerOut'>
                     <Link className='linksFooterOut' to='/about-app'>
                         <div className='buttonFooterOut'>
@@ -39,8 +39,8 @@ function Footer() {
                         </Link>
                     </footer> :
                     <footer className='footerNotFound'>
-                        <Redirect to='/not-found' />
-                        <div>asdasda</div>
+                        {/* <Redirect to='/not-found' /> */}
+                        <p></p>
                     </footer>
             }
         </>

@@ -20,12 +20,13 @@ export default function App() {
         <Route path='/:page' component={Navbar}/>
         <Switch>
           <Route exact path='/' component={LandingPage}/>
+          <Route exact path='/landing' component={LandingPage}/>
           <Route exact path='/about-app' component={AboutApp}/>
           <Route exact path='/about-us' component={AboutUs}/>
           <Route exact path='/terms' component={Terms}/>
           <Route exact path='/dashboard' component={Dashboard}/>
           <Route exact path='/profile-page' component={ProfilePage}/>
-          <Route exact path='/not-found' component={NotFound}/>
+          <Route exact path='/:notFound' component={NotFound}/>
         </Switch>
         <Route path='/:page' component={Footer}/>
       </div> 
