@@ -28,7 +28,7 @@ function NavBar() {
                                     <div><a href='/login'><p className='navLogIn'>Login</p></a></div>
                                 </div> :
                                 <div>
-                                    <div><a href='/settings'><p className='navSettings'><img src ={navSettings}></img></p></a></div>
+                                    <div><a href='/settings'><p className='navSettings'><img src ={navSettings} alt='settings'></img></p></a></div>
                                 </div>
                 }
             </div>

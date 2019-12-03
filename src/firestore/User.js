@@ -22,7 +22,7 @@ class User extends React.Component {
         db.settings({
             timestampsInSnapshots: true
         });
-        const userRef = db.collection("users").add({
+        db.collection("users").add({
         fullname: this.state.fullname,
         email: this.state.email
   }); 
@@ -55,4 +55,3 @@ class User extends React.Component {
         }
      }
   export default User;
-  
