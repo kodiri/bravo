@@ -8,12 +8,13 @@ import AboutApp from './PagesComponents/AboutApp';
 import AboutUs from './PagesComponents/AboutUs';
 import Terms from './PagesComponents/Terms';
 import Footer from './Footer/Footer';
+// import QRCodeForm from './QRCodeForm/QRCodeForm';
 
 const App = () => {
   return (
     <Router>
       <div className='App'>
-        <Navbar />
+      <Route path='/:page' component={Navbar}/>
         <Switch>
           <Route exact path='/' component={LandingPage}/>
           <Route exact path='/about-app' component={AboutApp}/>

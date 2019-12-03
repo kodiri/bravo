@@ -37,11 +37,29 @@ a {
     letter-spacing: 1px;
     justify-items: center;
 }
-.navSettings, .navLanding{
-    /* i am an icon link */
+
+.navLogIn2 {
     padding-right: 25px;
-    height: 50px;
+    padding-top: 11px;
+    letter-spacing: 1px;
+    justify-items: center;
+}
+.navSignUp2 {
+    padding-right: 25px;
+    padding-top: 11px;
+    letter-spacing: 1px;
+    justify-items: center;
+}
+.navSettings {
+    /* i am an icon link */
     width: 50px;
+    height: 50px;
+    padding-right: 25px;
+}
+.navLanding {
+    width: 50px;
+    height: 50px;
+    padding-right: 35px;
 }
 @media only screen and (max-width: 700px) {
     .navLogo {
