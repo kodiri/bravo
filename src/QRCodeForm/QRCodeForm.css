@@ -5,6 +5,7 @@
     /* display: flex;
     flex-direction: column; */
     text-align: left;
+    /* margin-bottom: 70px; */
 }
 
 .QRCodeFormContainer h1 {
@@ -33,9 +34,9 @@
 .tapInput {
     flex: 8;
 }
-.firstName {
-    /* flex: 3; */
-}
+/* .firstName {
+     flex: 3; 
+} */
 .QRCodeFormContainer input[type='checkbox'] {
     width: 20px;
     height: 20px;
@@ -60,4 +61,11 @@
     padding-left: 10px;
     border: none;
     border-bottom: 1px solid aquamarine;
+}
+
+/* !!!!!
+    this is for the QRCode not to be displayed behind the footer
+*/
+.displayQRCode {
+    margin-bottom: 50px;
 }
