@@ -49,22 +49,24 @@ export default function QRCodeForm() {
             address: {address},
             addressSelected: {addressSelected},
         };
-       const composeURL = `https://qrickit.com/api/qr.php?d=BEGIN%3aVCARD%0d%0aVERSION%3a3.0%0d%0aN%3a${lastName}%3b${firstName}%0d%0aORG%3a${companyOrg}.%0d%0aTITLE%3a${jobTitle}%0d%0aEMAIL%3a${email}%0d%0aTEL%3bTYPE%3dCELL%3a${telTypeCell}%0d%0aTEL%3bTYPE%3dWORK%2c%0d%0aVOICE%3a${telTypeWork}%0d%0aNOTE%3a${note}%0d%0aURL%3a${url}%0d%0aADR%3a%3b%3b${address}%0d%0aEND%3aVCARD%0A&addtext=&txtcolor=000000&fgdcolor=000000&bgdcolor=FFFFFF&qrsize=300`;
+        const composeURL = `https://qrickit.com/api/qr.php?d=BEGIN%3aVCARD%0d%0aVERSION%3a3.0%0d%0aN%3a${lastName}%3b${firstName}%0d%0aORG%3a${companyOrg}.%0d%0aTITLE%3a${jobTitle}%0d%0aEMAIL%3a${email}%0d%0aTEL%3bTYPE%3dCELL%3a${telTypeCell}%0d%0aTEL%3bTYPE%3dWORK%2c%0d%0aVOICE%3a${telTypeWork}%0d%0aNOTE%3a${note}%0d%0aURL%3a${url}%0d%0aADR%3a%3b%3b${address}%0d%0aEND%3aVCARD%0A&addtext=&txtcolor=000000&fgdcolor=000000&bgdcolor=FFFFFF&qrsize=300`;
 
-        // qrCodeArray.push(qrCodeObj);
-        console.log('button clicked', qrCodeObj);
-        // console.log(qrCodeArray);
+        generateQRCode(qrCodeObj);
+        // Set QR Url
         setQRUrl(composeURL);
-        console.log(qrUrl);
+  
     }
     
     // function to submit selected fields to QR code URL
-
+    const generateQRCode = (qrCodeObj) => {
+        console.log('button clicked', qrCodeObj);
+        console.log(qrUrl);
+    }
 
     return (
         <>
         <div className='QRCodeFormContainer'>
-            <h3>TAP QR Code Form</h3>
+            <h2>TAP QR Code Form</h2>
             <form onSubmit={handleSubmit}>
                 <div className='tapInputRow'>
                     <label htmlFor='firstName'>First name: </label>
