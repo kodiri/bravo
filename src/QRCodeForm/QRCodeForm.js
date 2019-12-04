@@ -24,9 +24,12 @@ export default function QRCodeForm() {
     const [noteSelected, setNoteSelected] = useState(true);
     const [urlSelected, setUrlSelected] = useState(true);
     const [addressSelected, setAddressSelected] = useState(true);
+    const [ qrButtonPressed, setqrButtonPressed ] = useState(false);
 
     const handleSubmit = (event)=> {
         event.preventDefault();
+        setqrButtonPressed(true);
+        console.log(event);
         let qrCodeObj = {
             firstName: {firstName},
             firstNameSelected: {firstNameSelected},
@@ -49,18 +52,18 @@ export default function QRCodeForm() {
             address: {address},
             addressSelected: {addressSelected},
         };
-        const composeURL = `https://qrickit.com/api/qr.php?d=BEGIN%3aVCARD%0d%0aVERSION%3a3.0%0d%0aN%3a${lastName}%3b${firstName}%0d%0aORG%3a${companyOrg}.%0d%0aTITLE%3a${jobTitle}%0d%0aEMAIL%3a${email}%0d%0aTEL%3bTYPE%3dCELL%3a${telTypeCell}%0d%0aTEL%3bTYPE%3dWORK%2c%0d%0aVOICE%3a${telTypeWork}%0d%0aNOTE%3a${note}%0d%0aURL%3a${url}%0d%0aADR%3a%3b%3b${address}%0d%0aEND%3aVCARD%0A&addtext=&txtcolor=000000&fgdcolor=000000&bgdcolor=FFFFFF&qrsize=300`;
-
-        generateQRCode(qrCodeObj);
-        // Set QR Url
-        setQRUrl(composeURL);
-  
+       
+        const generatedQRrl = generateQRCode();
+        setQRUrl(generatedQRrl);
     }
     
     // function to submit selected fields to QR code URL
-    const generateQRCode = (qrCodeObj) => {
-        console.log('button clicked', qrCodeObj);
+    const generateQRCode = () => {
+        console.log('button clicked');
         console.log(qrUrl);
+        const composeURL = `https://qrickit.com/api/qr.php?d=BEGIN%3aVCARD%0d%0aVERSION%3a3.0%0d%0aN%3a${lastName}%3b${firstName}%0d%0aORG%3a${companyOrg}.%0d%0aTITLE%3a${jobTitle}%0d%0aEMAIL%3a${email}%0d%0aTEL%3bTYPE%3dCELL%3a${telTypeCell}%0d%0aTEL%3bTYPE%3dWORK%2c%0d%0aVOICE%3a${telTypeWork}%0d%0aNOTE%3a${note}%0d%0aURL%3a${url}%0d%0aADR%3a%3b%3b${address}%0d%0aEND%3aVCARD%0A&addtext=&txtcolor=000000&fgdcolor=000000&bgdcolor=FFFFFF&qrsize=300`;
+        console.log(composeURL);
+        return composeURL
     }
 
     return (
@@ -255,7 +258,7 @@ export default function QRCodeForm() {
         </div>
         <div id='displayQRCode'>
             {
-                firstName || lastName ? <img alt='qrcode' src={qrUrl}></img> : <h2>No QR Code yet!</h2>
+                qrButtonPressed ? <img alt='qrcode' src={qrUrl}></img> : <h2>No QR Code yet!</h2>
             }
         </div>
     </>

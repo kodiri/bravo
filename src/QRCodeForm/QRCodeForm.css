@@ -61,7 +61,8 @@
     border: none;
     border-bottom: 1px solid aquamarine;
 }
-#isplayQRCode  {
+#displayQRCode  {
     width: 300px;
     height: 300px;
+    margin: 0 auto;
 }
