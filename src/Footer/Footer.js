@@ -1,13 +1,17 @@
 import React from 'react';
-import { Link, useParams } from 'react-router-dom';
+import { Link, useParams, useHistory } from 'react-router-dom';
 import './Footer.css';
 
 function Footer() {
     let { page } = useParams();
+    let history = useHistory();
+    function goBackHandle() {
+        history.goBack();
+    }
     return (
         <>
             {
-            page === '/' || page === 'about-us' || page === 'about-app' || page === 'terms' || page === 'signin' || page === 'signup' ?
+            page === '/' || page === 'landing' || page === 'about-app' || page === 'about-us' || page === 'terms' || page === 'signin' || page === 'signup' || page === 'login' ?
                 <footer className='footerOut'>
                     <Link className='linksFooterOut' to='/about-app'>
                         <div className='buttonFooterOut'>
@@ -39,8 +43,9 @@ function Footer() {
                         </Link>
                     </footer> :
                     <footer className='footerNotFound'>
-                        {/* <Redirect to='/not-found' /> */}
-                        <p></p>
+                        <div className='divFooterNotFound'>
+                            <button className='buttonFooterNotFound' onClick={goBackHandle}>Go Back</button>
+                        </div>
                     </footer>
             }
         </>

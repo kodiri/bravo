@@ -11,6 +11,7 @@ import Footer from './footer/Footer';
 import Dashboard from './pagesComponents/Dashboard';
 import ProfilePage from './pagesComponents/ProfilePage';
 import NotFound from './pagesComponents/NotFound';
+import Login from './Login/Login';
 //import QRCodeForm from './QRCodeForm/QRCodeForm';
 
 export default function App() {
@@ -26,6 +27,7 @@ export default function App() {
           <Route exact path='/terms' component={Terms}/>
           <Route exact path='/dashboard' component={Dashboard}/>
           <Route exact path='/profile-page' component={ProfilePage}/>
+          <Route exact path='/login' component={Login} />
           <Route exact path='/:notFound' component={NotFound}/>
         </Switch>
         <Route path='/:page' component={Footer}/>
