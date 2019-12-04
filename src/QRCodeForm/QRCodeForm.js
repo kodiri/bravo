@@ -29,43 +29,46 @@ export default function QRCodeForm() {
     const handleSubmit = (event)=> {
         event.preventDefault();
         setqrButtonPressed(true);
-        console.log(event);
-        let qrCodeObj = {
-            firstName: {firstName},
-            firstNameSelected: {firstNameSelected},
-            lastName: {lastName},
-            lastNameSelected: {lastNameSelected},
-            email: {email},
-            emailSelected: {emailSelected},
-            companyOrg:{companyOrg},
-            companyOrgSelected: {companyOrgSelected},
-            jobTitle:{jobTitle},
-            jobTitleSelected: {jobTitleSelected},
-            telTypeCell:{telTypeCell},
-            telTypeCellSelected: {telTypeCellSelected},
-            telTypeWork:{telTypeWork},
-            telTypeWorkSelected: {telTypeWorkSelected},
-            note:{note},
-            noteSelected: {noteSelected},
-            url:{url},
-            urlSelected: {urlSelected},
-            address: {address},
-            addressSelected: {addressSelected},
-        };
-       
-        const generatedQRrl = generateQRCode();
-        setQRUrl(generatedQRrl);
+        const generatedQRUrl = generateQRCode();
+        setQRUrl(generatedQRUrl);
     }
     
     // function to submit selected fields to QR code URL
     const generateQRCode = () => {
-        console.log('button clicked');
-        console.log(qrUrl);
-        const composeURL = `https://qrickit.com/api/qr.php?d=BEGIN%3aVCARD%0d%0aVERSION%3a3.0%0d%0aN%3a${lastName}%3b${firstName}%0d%0aORG%3a${companyOrg}.%0d%0aTITLE%3a${jobTitle}%0d%0aEMAIL%3a${email}%0d%0aTEL%3bTYPE%3dCELL%3a${telTypeCell}%0d%0aTEL%3bTYPE%3dWORK%2c%0d%0aVOICE%3a${telTypeWork}%0d%0aNOTE%3a${note}%0d%0aURL%3a${url}%0d%0aADR%3a%3b%3b${address}%0d%0aEND%3aVCARD%0A&addtext=&txtcolor=000000&fgdcolor=000000&bgdcolor=FFFFFF&qrsize=300`;
-        console.log(composeURL);
+        let qrFirstName  = firstNameSelected ? firstName : '' ;
+        let qrLastName = lastNameSelected ? lastName: '' ;
+        let qrEmail = emailSelected ? email : '' ;
+        let qrCompanyOrg = companyOrgSelected ? companyOrg : '' ;
+        let qrJobTitle = jobTitleSelected ? jobTitle : '' ;
+        let qrtelTypeCell = telTypeCellSelected ? telTypeCell : '' ;
+        let qrtelTypeWork = telTypeWorkSelected ? telTypeWork : '' ;
+        let qrNote = noteSelected ? note : '' ;
+        let qrUrl = urlSelected ? url : '' ;
+        let qrAddress = addressSelected ? address : '' ;
+        // const composeURL = `https://qrickit.com/api/qr.php?d=BEGIN%3aVCARD%0d%0aVERSION%3a3.0%0d%0aN%3a${qrLastName}%3b${qrFirstName}%0d%0aORG%3a${qrCompanyOrg}.%0d%0aTITLE%3a${qrJobTitle}%0d%0aEMAIL%3a${qrEmail}%0d%0aTEL%3bTYPE%3dCELL%3a${qrtelTypeCell}%0d%0aTEL%3bTYPE%3dWORK%2c%0d%0aVOICE%3a${qrtelTypeWork}%0d%0aNOTE%3a${qrNote}%0d%0aURL%3a${qrUrl}%0d%0aADR%3a%3b%3b${qrAddress}%0d%0aEND%3aVCARD%0A&addtext=&txtcolor=000000&fgdcolor=000000&bgdcolor=FFFFFF&qrsize=300`;
+        const composeURL = 'https://qrickit.com/api/qr.php?d=BEGIN%3aVCARD%0d%0aVERSION%3a3.0%0d%0aN%3a'
+         + qrLastName
+         +'%3b'
+         + qrFirstName
+         + '%0d%0aORG%3a'
+         + qrCompanyOrg
+         + '.%0d%0aTITLE%3a'
+         + qrJobTitle
+         + '%0d%0aEMAIL%3a'
+         + qrEmail
+         + '%0d%0aTEL%3bTYPE%3dCELL%3a'
+         + qrtelTypeCell
+         + '%0d%0aTEL%3bTYPE%3dWORK%2c%0d%0aVOICE%3a'
+         + qrtelTypeWork
+         + '%0d%0aNOTE%3a'
+         + qrNote
+         + '%0d%0aURL%3a'
+         + qrUrl
+         + '%0d%0aADR%3a%3b%3b'
+         + qrAddress
+         + '%0d%0aEND%3aVCARD%0A&addtext=&txtcolor=000000&fgdcolor=000000&bgdcolor=FFFFFF&qrsize=300';
         return composeURL
     }
-
     return (
         <>
         <div className='QRCodeFormContainer'>
