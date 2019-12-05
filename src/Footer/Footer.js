@@ -12,39 +12,39 @@ function Footer() {
         <>
             {
             page === '/' || page === 'landing' || page === 'about-app' || page === 'about-us' || page === 'terms' || page === 'signin' || page === 'signup' || page === 'login' ?
-                <footer className='footerOut'>
-                    <Link className='linksFooterOut' to='/about-app'>
-                        <div className='buttonFooterOut'>
-                            <p>About App</p>
+                <footer className='footer'>
+                    <Link className='linksFooter' to='/about-app'>
+                        <div>
+                            <button className='buttonFooter'>About App</button>
                         </div>
                     </Link>
-                    <Link className='linksFooterOut' to='/about-us'>
-                        <div className='buttonFooterOut'>
-                            <p>About Us</p>
+                    <Link className='linksFooter' to='/about-us'>
+                        <div>
+                            <button className='buttonFooter'>About Us</button>
                         </div>
                     </Link>
-                    <Link className='linksFooterOut' to='/terms'>
-                        <div className='buttonFooterOut'>
-                            <p>Terms and Conditions</p>
+                    <Link className='linksFooter' to='/terms'>
+                        <div>
+                            <button className='buttonFooter'>Terms & Conditions</button>
                         </div>
                     </Link>
                 </footer> :
                 page === 'dashboard' || page === 'profile-page' || page === 'settings' ?
-                    <footer className='footerIn'>
-                        <Link className='linksFooterIn' to='/dashboard'>
-                            <div className='buttonFooterIn'>
-                                <p>Dashboard</p>
+                    <footer className='footer'>
+                        <Link className='linksFooter' to='/dashboard'>
+                            <div>
+                                <button className='buttonFooter'>Dashboard</button>
                             </div>
                         </Link>
-                        <Link className='linksFooterIn' to='/profile-page'>
-                            <div className='buttonFooterIn'>
-                                <p>Profile Page</p>
+                        <Link className='linksFooter' to='/profile-page'>
+                            <div>
+                                <button className='buttonFooter'>Profile Page</button>
                             </div>
                         </Link>
                     </footer> :
-                    <footer className='footerNotFound'>
-                        <div className='divFooterNotFound'>
-                            <button className='buttonFooterNotFound' onClick={goBackHandle}>Go Back</button>
+                    <footer className='footer'>
+                        <div>
+                            <button className='buttonFooter' onClick={goBackHandle}>Go Back</button>
                         </div>
                     </footer>
             }
