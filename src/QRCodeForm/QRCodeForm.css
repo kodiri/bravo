@@ -5,6 +5,7 @@
     /* display: flex;
     flex-direction: column; */
     text-align: left;
+    /* margin-bottom: 70px; */
 }
 
 .QRCodeFormContainer h2 {
@@ -33,9 +34,9 @@
 .tapInput {
     flex: 8;
 }
-.firstName {
-    /* flex: 3; */
-}
+/* .firstName {
+     flex: 3; 
+} */
 .QRCodeFormContainer input[type='checkbox'] {
     width: 20px;
     height: 20px;
@@ -61,6 +62,7 @@
     border: none;
     border-bottom: 1px solid aquamarine;
 }
+
 #displayQRCode  {
     width: 300px;
     height: 300px;

@@ -1,7 +1,6 @@
 import React from 'react';
-import './App.css';
 
-export default function terms() {
+export default function Terms() {
     return (
         <>
             <div>

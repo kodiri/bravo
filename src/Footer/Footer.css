@@ -1,0 +1,32 @@
+.footer {
+    height: 50px;
+    margin-top: auto;
+    bottom: 0px;
+    position: fixed;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(181, 228, 228);
+    width: 100%;
+    justify-items: center;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 18px;
+    align-items: center;
+}
+.buttonFooter {
+    background-color: rgb(181, 228, 228);
+    color: #63B6A2;
+    width: 200px;
+    height: 50px;
+    font-size: 1.5em;
+    font-family: 'Bebas Neue', cursive;
+    border-style: none;
+    outline: none;
+}
+.buttonFooter:hover {
+    background-color: rgb(193, 248, 248);
+    transition: 0.3s;
+}
+.linksFooterIn {
+    text-decoration: none;
+}
+
