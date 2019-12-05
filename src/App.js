@@ -1,16 +1,16 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import LandingPage from './pagesComponents/LandingPage';
+import LandingPage from './components/LandingPage/LandingPage';
 import Navbar from './NavBar/lisa_navbar.js';
 import './NavBar/lisa_navbar.css'
 import './App.css';
 import AboutApp from './pagesComponents/AboutApp';
-import AboutUs from './pagesComponents/AboutUs';
+import AboutUs from './components/aboutUs/AboutUs';
 import Terms from './pagesComponents/Terms';
 import Footer from './footer/Footer';
 import Dashboard from './pagesComponents/Dashboard';
 import ProfilePage from './pagesComponents/ProfilePage';
-import NotFound from './pagesComponents/NotFound';
+import NotFound from './components/notfound/NotFound';
 import Login from './Login/Login';
 //import QRCodeForm from './QRCodeForm/QRCodeForm';
 
