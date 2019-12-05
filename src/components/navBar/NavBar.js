@@ -1,9 +1,9 @@
 import React from 'react';
 import { useParams } from "react-router";
-import './lisa_navbar.css';
-import logo from '../TAP.png';
-import navSettings from '../icons/settings.svg';
-import navLanding from '../icons/home.svg';
+import './NavBar.css';
+import logo from './TAP.png';
+import navSettings from './icons/settings.svg';
+import navLanding from './icons/home.svg';
 
 function NavBar() {
 
