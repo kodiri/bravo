@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function aboutApp() {
+export default function AboutApp() {
     return (
         <>
             <div>
