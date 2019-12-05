@@ -1,5 +1,5 @@
 import React from 'react';
-import QRCode from '../QRCodeForm/QRCodeForm';
+import QRCode from '../qrCodeForm/QRCodeForm';
 
 const ProfilePage = () => {
     return (

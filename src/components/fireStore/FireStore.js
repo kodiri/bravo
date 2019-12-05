@@ -1,4 +1,4 @@
-import * as firebase from 'firebase';
+import * as firebase from './node_modules/firebase';
 
 // Your web app's Firebase configuration
 var firebaseConfig = {

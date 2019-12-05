@@ -1,13 +1,14 @@
 import React, { useState } from 'react';
 import './login.css';
-import Logo from './img/TAP.png';
+//import Logo from './img/TAP.png';
 
 export default function Login() {
+    // eslint-disable-next-line 
     const [user, setUser] = useState([
         { email: 'szym0nd4widowicz@gmail.com', password: 'test' },
         { email: 'cyckyaczk@gmail.com', password: 'test2' }
     ]);
-
+// eslint-disable-next-line 
     const [toggle, setToggle] = useState(true);
 
     const [login, setLogin] = useState({
