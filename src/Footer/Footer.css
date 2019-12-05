@@ -1,68 +1,18 @@
-.footerOut {
+.footer {
     height: 50px;
     margin-top: auto;
     bottom: 0px;
     position: fixed;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    justify-content: space-evenly;
     background-color: rgb(181, 228, 228);
     width: 100%;
     justify-items: center;
     font-family: 'Bebas Neue', cursive;
     font-size: 18px;
     align-items: center;
-  }
-.buttonFooterOut {
-    display: flex;
-    color: #63B6A2;
-    box-sizing: border-box;
-    align-items: center;
 }
-.linksFooterOut {
-    text-decoration: none;
-}
-
-/*-----------------------------------------*/
-
-.footerIn {
-    height: 50px;
-    margin-top: auto;
-    bottom: 0px;
-    position: fixed;
-    display: flex;
-    justify-content: space-evenly;
-    background-color: rgb(181, 228, 228);
-    width: 100%;
-    font-family: 'Bebas Neue', cursive;
-    font-size: 18px;
-    align-items: center;
-  }
-.buttonFooterIn {
-    color: #63B6A2;
-    box-sizing: border-box;
-}
-.linksFooterIn {
-    text-decoration: none;
-}
-/*-----------------------------------------*/
-.footerNotFound {
-    height: 50px;
-    margin-top: auto;
-    bottom: 0px;
-    position: fixed;
-    display: flex;
-    justify-content: space-evenly;
-    background-color: rgb(181, 228, 228);
-    width: 100%;
-    font-family: 'Bebas Neue', cursive;
-    font-size: 18px;
-    align-items: center;
-  }
-.divFooterNotFound {
-    color: blue;
-    box-sizing: border-box;
-}
-.buttonFooterNotFound {
+.buttonFooter {
     background-color: rgb(181, 228, 228);
     color: #63B6A2;
     width: 200px;
@@ -70,4 +20,13 @@
     font-size: 1.5em;
     font-family: 'Bebas Neue', cursive;
     border-style: none;
+    outline: none;
 }
+.buttonFooter:hover {
+    background-color: rgb(193, 248, 248);
+    transition: 0.3s;
+}
+.linksFooterIn {
+    text-decoration: none;
+}
+
