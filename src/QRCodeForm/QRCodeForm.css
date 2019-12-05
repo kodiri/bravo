@@ -64,5 +64,7 @@
 #displayQRCode  {
     width: 300px;
     height: 300px;
-    margin: 0 auto;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 50px;
 }
