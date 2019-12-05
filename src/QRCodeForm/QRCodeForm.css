@@ -8,7 +8,7 @@
     /* margin-bottom: 70px; */
 }
 
-.QRCodeFormContainer h1 {
+.QRCodeFormContainer h2 {
     text-align: center;
 }
 .QRCodeFormContainer input {
@@ -63,9 +63,10 @@
     border-bottom: 1px solid aquamarine;
 }
 
-/* !!!!!
-    this is for the QRCode not to be displayed behind the footer
-*/
-.displayQRCode {
+#displayQRCode  {
+    width: 300px;
+    height: 300px;
+    margin-right: auto;
+    margin-left: auto;
     margin-bottom: 50px;
 }

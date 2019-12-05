@@ -7,7 +7,7 @@ import './App.css';
 import AboutApp from './pagesComponents/AboutApp';
 import AboutUs from './components/aboutUs/AboutUs';
 import Terms from './pagesComponents/Terms';
-import Footer from './footer/Footer';
+import Footer from './Footer/Footer';
 import Dashboard from './pagesComponents/Dashboard';
 import ProfilePage from './pagesComponents/ProfilePage';
 import NotFound from './components/notfound/NotFound';
