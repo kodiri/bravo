@@ -8,7 +8,7 @@
     /* margin-bottom: 70px; */
 }
 
-.QRCodeFormContainer h2 {
+.QRCodeFormContainer h2, .QRCodeFormContainer p {
     text-align: center;
 }
 .QRCodeFormContainer input {
