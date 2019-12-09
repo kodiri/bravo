@@ -1,5 +1,6 @@
 import React from 'react';
-import { useParams } from "react-router";
+// import React from './node_modules/react';
+import { useParams } from "./node_modules/react-router";
 import './lisa_navbar.css';
 import logo from '../TAP.png';
 import navSettings from '../icons/settings.svg';
@@ -28,7 +29,7 @@ function NavBar() {
                             page === 'signup' ?
                                 <>
                                     <div className='navLanding'><a href='/landing'><img src ={navLanding} alt='landingIcon'></img></a></div>
-                                    <div className='navLogIn2'><a href='/login' >Login</a></div>
+                                    <div className='navLogIn2'><a href='/login'>Login</a></div>
                                 </> 
                                 : <div className='navSettings'><a href='/settings'><img src ={navSettings} alt='settingsIcon'></img>
                                 </a></div>

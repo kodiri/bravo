@@ -1,5 +1,6 @@
 import React from 'react';
-import { Link, useParams, useHistory } from 'react-router-dom';
+// import React from './node_modules/react';
+import { Link, useParams, useHistory } from './node_modules/react-router-dom';
 import './Footer.css';
 
 function Footer() {
