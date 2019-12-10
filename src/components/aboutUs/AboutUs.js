@@ -7,36 +7,31 @@ export default function AboutUs() {
         <>
             <div>
                 <h1>Meet the team.</h1>
-                <p>State Team is a team of developers who graduated from Kodiri web
+                <p className='paragraph1'>State Team is a team of developers who graduated from Kodiri web
                     development bootcamp in London and created this WebApp as a graduation project.
                     The project is built by React.js and uses MongoDb in the backend for data.
                     The application repository is hosted on GitHub.
                 </p>
                 <div className="aboutUs-img">
                     <div>
-                    <p>Szymon</p>
-                        <img src={Cat} alt="mate1" />
-                        
+                    <p className='paragraph'>Szymon</p>
+                        <img className='pic' src={Cat} alt="mate1" /> 
                     </div>
                     <div>
-                    <p>Jonathan</p>
-                        <img src={Cat} alt="mate2" />
-                        
+                    <p className='paragraph'>Jonathan</p>
+                        <img className='pic' src={Cat} alt="mate2" />  
                     </div>
                     <div>
-                    <p>Lisa</p>
-                        <img src={Cat} alt="mate3" />
-                        
+                    <p className='paragraph'>Lisa</p>
+                        <img className='pic' src={Cat} alt="mate3" />
                     </div>
                     <div>
-                    <p>Max</p>
-                        <img src={Cat} alt="mate4" />
-                        
+                    <p className='paragraph'>Max</p>
+                        <img className='pic' src={Cat} alt="mate4" />
                     </div>
                     <div>
-                    <p>Sanjay</p>
-                        <img src={Cat} alt="mate5" />
-                        
+                    <p className='paragraph'>Sanjay</p>
+                        <img className='pic' src={Cat} alt="mate5" />
                     </div>
                 </div>
             </div>
