@@ -8,7 +8,7 @@
     /* margin-bottom: 70px; */
 }
 
-.QRCodeFormContainer h2 {
+.QRCodeFormContainer h2, .QRCodeFormContainer p {
     text-align: center;
 }
 .QRCodeFormContainer input {
@@ -21,7 +21,7 @@
 .QRCodeFormContainer label {
     padding: 0 15px;
     display: inline-block;
-    width: 90px;
+    width: 100px;
     color: dimgrey;
     font-size: 14px;
 }
@@ -49,7 +49,7 @@
 }
 .QRCodeFormContainer input[type='submit'] {
     width: 100%;
-    background: cornflowerblue;
+    background: #63B6A2;
     margin-top: 10px;
     /* margin-bottom: 10px; */
     color: #fff;

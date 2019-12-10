@@ -73,6 +73,7 @@ export default function QRCodeForm() {
         <>
         <div className='QRCodeFormContainer'>
             <h2>TAP QR Code Form</h2>
+            <p>Tick checkbox to include field in QR Code</p>
             <form onSubmit={handleSubmit}>
                 <div className='tapInputRow'>
                     <label htmlFor='firstName'>First name: </label>
