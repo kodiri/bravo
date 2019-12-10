@@ -1,10 +1,6 @@
-import React from 'react';
-
-export default function Terms() {
-    return (
-        <>
-            <div>
+<div>
                 <h1>TERMS AND CONDITIONS</h1>
+                <p>
                     <h2>https://state.now.sh</h2>
                     <h3>Last Updated December 9th, 2019</h3>
                     <br></br>
@@ -84,10 +80,8 @@ export default function Terms() {
                         <li>24.	use the Site in a manner inconsistent with any applicable laws or regulations.</li>
                         <br></br>
                     </ol>
+                </p>
                 <br></br>
                 <br></br>
                 <br></br>
             </div>
-        </>
-    );
-}

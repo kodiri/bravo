@@ -1,7 +1,9 @@
 *{
   margin: 0;
   padding: 0;
+  background-color: azure;
 }
 .App {
   text-align: center;
+  margin-bottom: 50px;
 }
