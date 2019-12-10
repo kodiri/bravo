@@ -1,17 +1,12 @@
-#navHeader {
+/* #navbar {
     display: flex;
     position: relative;
     box-sizing: border-box;
-    background-color: rgba(181, 228, 228, 0.596);
+    background-color: rgb(181, 228, 228);
     font-family: 'Bebas Neue', cursive;
     align-items: center;
-    height: 70px;
-}
-.navLogo {
-    margin: 0px auto;
-    height: 45px;
-    width: 110px;
-}
+    height: 50px;
+} 
 img {
     width: 100%;
     height: 100%;
@@ -22,10 +17,6 @@ img {
     position: absolute;
     right: 0;
     font-size: 25px;
-}
-a {
-    text-decoration: none;
-    color: #B69E3C;
 }
 .navLogIn {
     padding-right: 25px;
@@ -51,7 +42,7 @@ a {
     justify-items: center;
 }
 .navSettings {
-    /* i am an icon link */
+     i am an icon link 
     width: 75px;
     height: 75px;
     padding-right: 25px;
@@ -60,10 +51,46 @@ a {
     width: 80px;
     height: 80px;
     padding-right: 35px;
+} */
+
+#navbar {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    background-color: rgb(181, 228, 228);
+    justify-content: flex-end;
 }
+
+.links {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.buttonNavbar {
+    background-color: rgb(181, 228, 228);
+    color: #B69E3C;
+    width: 100px;
+    height: 50px;
+    font-size: 1.5em;
+    font-family: 'Bebas Neue', cursive;
+    border-style: none;
+    outline: none;
+}
+.buttonNavbar:hover {
+    background-color: rgb(193, 248, 248);
+    transition: 0.3s;
+}
+
+.TAPLogo {
+    position: absolute;
+    left: 46%;
+    background-color: rgb(181, 228, 228);
+    height: 50px;
+    width: auto;
+}
+
 @media only screen and (max-width: 700px) {
-    .navLogo {
-        margin: 0px;
-        padding-left: 20px;
+    .TAPLogo {
+        left: 1%;
     }
 }
