@@ -15,7 +15,7 @@ body {
 
 .landingPage h1 {
     font-size: 5vw;
-    margin-top: 5vw;
+    /* margin-top: 5vw; */
     text-shadow: 0 0 3px #000;
 }
 .landingPage h3 {
@@ -26,5 +26,5 @@ body {
 }
 .landingPage img {
     /* height: 30vh; */
-    width: 30vw;
+    width: 20vw;
 }
