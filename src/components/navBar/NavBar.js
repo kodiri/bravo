@@ -1,7 +1,7 @@
 import React from 'react';
 import { useParams, Link } from "react-router-dom";
 import './NavBar.css';
-import logo from './TAP.png';
+import Logo from './TAP.png';
 
 function NavBar() {
     let { page } = useParams();
@@ -11,7 +11,7 @@ function NavBar() {
             <nav id='navbar'>
 
                 <Link to='about-app'>
-                    <img src={logo} alt='TAP' className='TAPLogo' />
+                    <img src={Logo} alt='TAP' className='TAPLogo' />
                 </Link>
                 
                 <div className='links'>
