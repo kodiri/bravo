@@ -19,9 +19,11 @@ export default function App() {
   return (
     <Router>
       <div className='App'>
+      <Route exact path='/' component={Navbar} />
+      <Route exact path='/' component={Footer} />
         <Route path='/:page' component={Navbar} />
         <Switch>
-          <Route exact  path='/' component={LandingPage} />
+          <Route exact path='/' component={LandingPage} />
           <Route exact path='/about-app' component={AboutApp} />
           <Route exact path='/about-us' component={AboutUs} />
           <Route exact path='/terms' component={Terms} />
