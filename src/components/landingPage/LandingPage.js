@@ -1,12 +1,14 @@
 import React from 'react';
-import Logo from './TAP.png';
 import './LandingPage.css';
+import tap from './tap.png'
 // import React from './node_modules/react';
 
-export default function LandingPage() {
-    return (
-        <div className='landingContainer'><img className='TAPLogoLanding'src={Logo} alt='TAP'></img>
-        <br></br><br></br><br></br>
-            <button className='landingButton' onClick>START TAPPING</button></div>
+export default function LandingPage(){
+    return(
+        <div className='landingPage'>
+            <h1>Welcome to TAP</h1>
+            <img  src={tap}/>
+            <h3>Your Social & Networking QR Code Creator!</h3>
+        </div>
     );
 }

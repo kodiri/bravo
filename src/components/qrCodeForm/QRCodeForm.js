@@ -218,7 +218,7 @@ export default function QRCodeForm() {
                     />                     
                 </div>    
                 <div className='tapInputRow'>
-                    <label htmlFor='socialMediaUrl1'>Social Media URL 1</label>
+                    <label htmlFor='socialMediaUrl1'>S. Media URL #1</label>
                     <input 
                         className='tapInput'                    
                         id='url'
@@ -236,7 +236,7 @@ export default function QRCodeForm() {
                     />                     
                 </div>
                 <div className='tapInputRow'>
-                    <label htmlFor='socialMediaUrl2'>Social Media URL 2</label>
+                    <label htmlFor='socialMediaUrl2'>S. Media URL #2</label>
                     <input 
                         className='tapInput'                    
                         id='note'
