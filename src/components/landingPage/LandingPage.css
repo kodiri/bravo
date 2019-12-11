@@ -1,0 +1,21 @@
+.landingContainer {
+    justify-items: center;
+}
+
+.TAPLogoLanding {
+    height: 25;
+    width: 25%;
+}
+
+.landingButton {
+        font-family: 'Bebas Neue', cursive;
+        letter-spacing: 2px;
+        padding: 10px;
+        height: auto;
+        width: 200px;
+        background-color: #B69E3C;
+        font-size: 18px;
+        border-radius: 10px;
+        color: white;
+        text-align: center;
+}
