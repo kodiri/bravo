@@ -3,6 +3,11 @@
   padding: 0;
   background-color: azure;
 } */
+body {
+  background-image: url('background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .App {
   text-align: center;
   margin-bottom: 50px;
