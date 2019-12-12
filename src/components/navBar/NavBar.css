@@ -5,12 +5,10 @@
     background-color: rgb(181, 228, 228);
     justify-content: flex-end;
 }
-
 .links {
     display: flex;
     justify-content: space-evenly;
 }
-
 .buttonNavbar {
     background-color: rgb(181, 228, 228);
     color: #B69E3C;
@@ -25,7 +23,6 @@
     background-color: rgb(193, 248, 248);
     transition: 0.3s;
 }
-
 .TAPLogo {
     position: absolute;
     left: 46%;
