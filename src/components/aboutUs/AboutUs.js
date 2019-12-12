@@ -8,7 +8,7 @@ export default function AboutUs() {
         <>
             <div className='aboutUs'>
                 <h1>We are Team State.</h1>
-                <p className='paragraph'>We are a team of full-stack developers called 'State' who are passionate about developing apps that are relevant to the modern world of today. We met and graduated from the same web
+                <p className='aboutUsParagraph'>We are a team of full-stack developers called 'State' who are passionate about developing apps that are relevant to the modern world of today. We met and graduated from the same web
                     development bootcamp in London called Kodiri. Using React.js to build our project and MongoDb for our backend, we came together to create a WebApp that ultimately helps people connect faster and easier than ever.
                 </p>
                 <div className="aboutUs-img">
