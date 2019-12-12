@@ -1,0 +1,21 @@
+.aboutApp{
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 1px;
+    color: #63B6A2;
+}
+.aboutApp h1{
+    color: #B69E3C;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    margin: 0;
+  }
+.aboutAppParagraph{
+    font-size: 18px;
+    padding: 10px 0px;
+    margin: 0 5%;
+}
+.finalParagraph{
+    font-size: 23px;
+    color: #B69E3C;
+    line-height: 0.5em;
+}
