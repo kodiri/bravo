@@ -7,7 +7,7 @@ export default function AboutUs() {
         <>
             <div>
                 <h1>Meet the team.</h1>
-                <p className='paragraph1'>State Team is a team of developers who graduated from Kodiri web
+                <p className='paragraph'>State Team is a team of developers who graduated from Kodiri web
                     development bootcamp in London and created this WebApp as a graduation project.
                     The project is built by React.js and uses MongoDb in the backend for data.
                     The application repository is hosted on GitHub.
