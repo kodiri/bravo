@@ -7,7 +7,7 @@ export default function LandingPage(){
     return(
         <div className='landingPage'>
             <h1>Welcome to TAP</h1>
-            <img  src={tap}/>
+            <img  src={tap} alt='logo'/>
             <h3>Your Social & Networking QR Code Creator!</h3>
         </div>
     );

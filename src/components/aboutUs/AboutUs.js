@@ -1,36 +1,36 @@
 import React from 'react';
 import './AboutUs.css';
 import Cat from './kitten.jpg';
+import Lisa from './linkedin.jpg'
 
 export default function AboutUs() {
     return (
         <>
-            <div>
-                <h1>Meet the team.</h1>
-                <p className='paragraph'>State Team is a team of developers who graduated from Kodiri web
-                    development bootcamp in London and created this WebApp as a graduation project.
-                    The project is built by React.js and uses MongoDb in the backend for data.
-                    The application repository is hosted on GitHub.
+            <div className='aboutUs'>
+                <h1>We are State.</h1>
+                <p className='paragraph'>We are a team of full-stack developers who are passionate about developing apps that are relevant to the modern world of today. We met and graduated from the same web
+                    development bootcamp in London called Kodiri. Using React.js to build our project and MongoDb for our backend, we have come together to create a WebApp that ultimately helps people connect easier than ever.
                 </p>
                 <div className="aboutUs-img">
                     <div>
-                    <p className='paragraph'>Szymon</p>
+                    <p className='teamMember'>Szymon</p>
                         <img className='pic' src={Cat} alt="mate1" /> 
                     </div>
                     <div>
-                    <p className='paragraph'>Jonathan</p>
+                    <p className='teamMember'>Jonathan</p>
                         <img className='pic' src={Cat} alt="mate2" />  
                     </div>
                     <div>
-                    <p className='paragraph'>Lisa</p>
-                        <img className='pic' src={Cat} alt="mate3" />
+                    <p className='teamMember'>Lisa</p>
+                        <img className='pic' src={Lisa} alt="mate3" />
+                        <p className='memberInfo'>Lisa is the original founder of the idea behind TAP. She worked for multiple tech start-ups and realized her true passion lies in tech entrepreneurship.</p>
                     </div>
                     <div>
-                    <p className='paragraph'>Max</p>
+                    <p className='teamMember'>Max</p>
                         <img className='pic' src={Cat} alt="mate4" />
                     </div>
                     <div>
-                    <p className='paragraph'>Sanjay</p>
+                    <p className='teamMember'>Sanjay</p>
                         <img className='pic' src={Cat} alt="mate5" />
                     </div>
                 </div>
