@@ -16,25 +16,25 @@ export default function AboutUs() {
                 <div className="aboutUs-img">
                     <div>
                     <p className='teamMember'>Szymon</p>
-                        <img className='pic' src={Cat} alt="mate1" /> 
+                    <a href="https://www.linkedin.com/in/l-nguyen/"><img className='pic' src={Cat} alt="mate1" /></a>
                     </div>
                     <div>
                     <p className='teamMember'>Jonathan</p>
-                        <img className='pic' src={Johnny} alt="mate2" />  
+                    <a href="https://www.linkedin.com/in/l-nguyen/"><img className='pic' src={Johnny} alt="mate2" /></a> 
                     </div>
                     <div>
                     <p className='teamMember'>Lisa</p>
-                        <img className='pic' src={Lisa} alt="mate3" />
+                    <a href="https://www.linkedin.com/in/l-nguyen/"><img className='pic' src={Lisa} alt="mate3" /></a>
                         <p className='memberInfo'>Lisa is the original founder of the idea behind TAP. She worked for multiple tech start-ups and realized her true passion lies in tech entrepreneurship.</p>
                     </div>
                     <div>
                     <p className='teamMember'>Max</p>
-                        <img className='pic' src={Max} alt="mate4" />
+                    <a href="https://www.linkedin.com/in/l-nguyen/"><img className='pic' src={Max} alt="mate4" /></a>
                         <p className='memberInfo'>Max, is an experienced technologist in desktop, server and messaging systems. He is currently focused on fullstack javascript development and the cloud.</p>
                     </div>
                     <div>
                     <p className='teamMember'>Sanjay</p>
-                        <img className='pic' src={Cat} alt="mate5" />
+                    <a href="https://www.linkedin.com/in/l-nguyen/"><img className='pic' src={Cat} alt="mate5" /></a>
                     </div>
                 </div>
             </div>
