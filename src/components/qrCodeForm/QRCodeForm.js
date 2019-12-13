@@ -166,7 +166,7 @@ export default function QRCodeForm() {
                 </div>
                 <div className='tapInputRow'>
                     <label htmlFor='address'>Address</label>
-                    <textarea 
+                    <input
                         className='tapInput'                    
                         id='address'
                         placeholder='Address'

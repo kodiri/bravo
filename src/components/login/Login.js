@@ -17,7 +17,7 @@ export default function Login() {
     });
 
     const [error, setError] = useState(
-        {error: true, errorUser: 'invalid user name', errorPassword: 'invalid password', errorColor: '#B69E3C'}
+        {error: true, errorUser: 'invalid user name', errorPassword: 'invalid password', errorColor: 'pink'}
     );
 
     function loginCheck(event) {
@@ -34,7 +34,7 @@ export default function Login() {
         let valid = user.find(user => user.email === login.username);
         valid ?
             console.log('find it') :
-            setError({error: !error, errorColor: 'red'});
+            setError({error: !error, errorColor: 'pink'});
         //setToggle(!toggle);
     }
 
@@ -47,7 +47,7 @@ export default function Login() {
                     <div className="item">
                         <input 
                         name="email"
-                        onChange={loginCheck}placeholder="email or phone" style={{ backgroundColor: error.errorColor}} />
+                        onChange={loginCheck}placeholder="email or phone" style={{ backgroundColor: 'white'}} />
                         {!error.error ? <p className="error">Invalid email or phone number</p> : ''}
                     </div>
                     <div className="item">

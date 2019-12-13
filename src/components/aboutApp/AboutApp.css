@@ -5,8 +5,7 @@
 }
 .aboutApp h1{
     color: #B69E3C;
-    padding-top: 15px;
-    padding-bottom: 10px;
+    padding: 10px 0;
     margin: 0;
   }
 .aboutAppParagraph{
@@ -18,4 +17,5 @@
     font-size: 23px;
     color: #B69E3C;
     line-height: 0.5em;
+    padding-bottom: 8px;
 }

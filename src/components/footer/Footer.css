@@ -1,5 +1,5 @@
 .footer {
-    height: 50px;
+    height: 70px;
     margin-top: auto;
     bottom: 0px;
     position: fixed;
@@ -16,7 +16,7 @@
     background-color: rgb(181, 228, 228);
     color: #63B6A2;
     width: 200px;
-    height: 50px;
+    height: 70px;
     font-size: 1.5em;
     font-family: 'Bebas Neue', cursive;
     border-style: none;
@@ -31,11 +31,11 @@
 }
 
 @media only screen and (max-width: 700px) {
-
+  
     .buttonFooter {
         background-color: rgb(181, 228, 228);
         color: #63B6A2;
-        width: 150px;
+        width: 100px;
         height: 50px;
         font-size: 1.2em;
         font-family: 'Bebas Neue', cursive;
