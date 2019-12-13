@@ -1,7 +1,9 @@
 import React from 'react';
 import './AboutUs.css';
 import Cat from './kitten.jpg';
-import Lisa from './linkedin.jpg'
+import Lisa from './lisa.jpg'
+import Johnny from './johnny.JPG'
+import Max from './max.jpg'
 
 export default function AboutUs() {
     return (
@@ -18,7 +20,7 @@ export default function AboutUs() {
                     </div>
                     <div>
                     <p className='teamMember'>Jonathan</p>
-                        <img className='pic' src={Cat} alt="mate2" />  
+                        <img className='pic' src={Johnny} alt="mate2" />  
                     </div>
                     <div>
                     <p className='teamMember'>Lisa</p>
@@ -27,7 +29,8 @@ export default function AboutUs() {
                     </div>
                     <div>
                     <p className='teamMember'>Max</p>
-                        <img className='pic' src={Cat} alt="mate4" />
+                        <img className='pic' src={Max} alt="mate4" />
+                        <p className='memberInfo'>Max, is an experienced technologist in desktop, server and messaging systems. He is currently focused on fullstack javascript development and the cloud.</p>
                     </div>
                     <div>
                     <p className='teamMember'>Sanjay</p>

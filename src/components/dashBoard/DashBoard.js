@@ -1,9 +1,10 @@
 import React from 'react';
+import './DashBoard.css'
 import Carousel from '../carousel/SimpleSlider';
 
 const Dashboard = () => {
     return (
-        <div>
+        <div className='carousel'>
             <Carousel />
         </div>
     );
