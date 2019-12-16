@@ -6,6 +6,7 @@
     position: fixed;
     margin-bottom: auto;
     top: 0px;
+    z-index: 1;
 }
 
 .links {
