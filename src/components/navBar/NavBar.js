@@ -9,11 +9,9 @@ function NavBar() {
     return (
         <>
             <nav id='navbar'>
-
                 <Link to='about-app'>
                     <img src={Logo} alt='TAP' className='TAPLogo' />
                 </Link>
-                
                 <div className='links'>
                     {
                         page === 'dashboard' || page === 'profile-page' || page === 'settings' ?
@@ -22,30 +20,18 @@ function NavBar() {
                                     <button className='buttonNavbar'>Settings</button>
                                 </Link>
                             </div> :
-                            page === 'signup' ?
+                            <>
                                 <div>
-                                    <Link to='login'>
-                                        <button className='buttonNavbar'>Login</button>
+                                    <Link to='dashboard'>
+                                        <button className='buttonNavbar'>Dashboard</button>
                                     </Link>
-                                </div> :
-                                page === 'login' ?
-                                    <div>
-                                        <Link to='signup'>
-                                            <button className='buttonNavbar'>Sign Up</button>
-                                        </Link>
-                                    </div> :
-                                    <>
-                                        <div>
-                                            <Link to='login'>
-                                                <button className='buttonNavbar'>Login</button>
-                                            </Link>
-                                        </div>
-                                        <div>
-                                            <Link to='signup'>
-                                                <button className='buttonNavbar'>Sign Up</button>
-                                            </Link>
-                                        </div>
-                                    </>
+                                </div>
+                                <div>
+                                    <Link to='profile-page'>
+                                        <button className='buttonNavbar'>Profile Page</button>
+                                    </Link>
+                                </div>
+                            </>
 
                     }
                 </div>
