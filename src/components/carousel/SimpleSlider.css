@@ -1,3 +1,7 @@
+.slick-slider {
+    margin: 0px 100px;  
+}
+
 .slick-slide img {
     display: block;
     margin: auto;
@@ -5,6 +9,14 @@
     height: auto;
 }
 
-.carouselheading {
-   color: #B69E3C;
+.slick-prev:before, .slick-next:before {
+    color: #63B6A2;
+    font-size: 30px;
+}
+
+.slick-previous {
+    
+}
+.slick-next {
+    
 }
