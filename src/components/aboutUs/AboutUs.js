@@ -1,10 +1,10 @@
 import React from 'react';
 import './AboutUs.css';
-import Cat from './kitten.jpg';
 import Lisa from './lisa.jpg'
 import Johnny from './johnny.JPG'
 import Max from './max.jpg'
 import Dummy from './dummy.jpg'
+import Szymon from './szymon.jpg'
 
 export default function AboutUs() {
     return (
@@ -17,7 +17,7 @@ export default function AboutUs() {
                 <div className="aboutUs-img">
                     <div>
                     <p className='teamMember'>Szymon</p>
-                    <a href="linkedin.com/in/szymon-dawidowicz-832996182"><img className='pic' src={Dummy} alt="Szymon" /></a>
+                    <a href="linkedin.com/in/szymon-dawidowicz-832996182"><img className='pic' src={Szymon} alt="Szymon" /></a>
                     <p className='memberInfo'>Quisque maximus egestas congue. Aliquam libero magna, porttitor et tincidunt ut, ultrices nec erat</p>
                     </div>
                     <div>
@@ -32,7 +32,7 @@ export default function AboutUs() {
                     </div>
                     <div>
                     <p className='teamMember'>Max</p>
-                    <a href="https://www.linkedin.com/"><img className='pic' src={Max} alt="Max" /></a>
+                    <a href="https://www.linkedin.com/in/max-garry-072107114/"><img className='pic' src={Max} alt="Max" /></a>
                         <p className='memberInfo'>Max, is an experienced technologist in desktop, server and messaging systems. He is currently focused on fullstack javascript development and the cloud.</p>
                     </div>
                     <div>
