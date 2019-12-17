@@ -17,28 +17,28 @@ class SimpleSlider extends React.Component {
     return (
       <Slider {...settings} className="carousel">
         <div>
+        <h1 className='carouselheading'>Social Media Profiles</h1>
         <img src={Qr} alt='qr'/>
-        <p>1</p>
         </div>
         <div>
+        <h1 className='carouselheading'>Portfolio</h1>
         <img src={Qr} alt='qr'/>
-        <p>2</p>
         </div>
         <div>
+        <h1 className='carouselheading'>Phone number & Social Media Profiles</h1>
         <img src={Qr} alt='qr'/>
-        <p>3</p>
         </div>
         <div>
+        <h1 className='carouselheading'>LinkedIn & CV</h1>
         <img src={Qr} alt='qr'/>
-        <p>4</p>
         </div>
         <div>
+        <h1 className='carouselheading'>App</h1>
         <img src={Qr} alt='qr'/>
-        <p>5</p>
         </div>
         <div>
-          <img src={Qr} alt='qr'/>
-          <p>6</p>
+        <h1 className='carouselheading'>Music</h1>
+        <img src={Qr} alt='qr'/>
         </div>
       </Slider>
     );
