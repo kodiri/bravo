@@ -3,7 +3,7 @@ import './AboutUs.css';
 import Lisa from './lisa.jpg'
 import Johnny from './johnny.JPG'
 import Max from './max.jpg'
-import Dummy from './dummy.jpg'
+import Sanjay from './sanjay.jpg'
 import Szymon from './szymon.jpg'
 
 export default function AboutUs() {
@@ -37,8 +37,8 @@ export default function AboutUs() {
                     </div>
                     <div>
                     <p className='teamMember'>Sanjay</p>
-                    <a href="https://www.linkedin.com/"><img className='pic' src={Dummy} alt="Sanjay" /></a>
-                    <p className='memberInfo'>Fusce eget sem ultrices, blandit orci a, cursus leo. Proin placerat orci non efficitur ultrices. Proin non congue ipsum.</p>
+                    <a href="https://www.linkedin.com/"><img className='pic' src={Sanjay} alt="Sanjay" /></a>
+                    <p className='memberInfo'>Sanjay is on his journey to become a Full stack Developer and currently working on a few projects to help him with this.</p>
                     </div>
                 </div>
             </div>
