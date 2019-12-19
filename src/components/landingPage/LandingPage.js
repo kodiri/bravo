@@ -1,7 +1,6 @@
 import React from 'react';
 import './LandingPage.css';
 import tap from './tap.png'
-// import React from './node_modules/react';
 
 export default function LandingPage(){
     return(
