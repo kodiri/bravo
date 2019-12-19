@@ -18,7 +18,7 @@ export default function AboutUs() {
                     <div>
                     <p className='teamMember'>Szymon</p>
                     <a href="linkedin.com/in/szymon-dawidowicz-832996182"><img className='pic' src={Szymon} alt="Szymon" /></a>
-                    <p className='memberInfo'>Quisque maximus egestas congue. Aliquam libero magna, porttitor et tincidunt ut, ultrices nec erat</p>
+                    <p className='memberInfo'>Szymon is full of energy and an ambitious Javascript developer</p>
                     </div>
                     <div>
                     <p className='teamMember'>Jonathan</p>

@@ -16,9 +16,9 @@
     height: 40px;
     padding-left: 10px;
     border: none;
-    border-bottom: 1px solid #B69E3C;
+    border: 1px solid #B69E3C;
     color: #B69E3C;
-    font-family: 'Bebas Neue', cursive;
+    font-family: 'Raleway', sans-serif;
     letter-spacing: 1px;
     font-size: 12px;
 }
@@ -48,26 +48,26 @@
     height: 20px;
     flex: 1;
     margin-top: 15px;
-    border: none;
     opacity: 0.5;
     color: rgb(181, 228, 228);
-    border-bottom: 1px solid #B69E3C;
 }
 .QRCodeFormContainer input[type='submit'] {
     width: 100%;
-    background: pink;
+    background: rgb(181, 228, 228);
     margin-top: 10px;
     /* margin-bottom: 10px; */
-    color: white;
+    color: #B69E3C;
     font-size: 18px;
     font-weight: bold;
+    font-family: 'Bebas Neue', cursive;
+    border-radius: 10px;
+    text-align: center;
 }
+
 .QRCodeFormContainer textarea {
     width: 238px;
     height: 75px;
     padding-left: 10px;
-    border: none;
-    border-bottom: 1px solid #B69E3C;
 }
 
 #displayQRCode  {
