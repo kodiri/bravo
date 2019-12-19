@@ -1,6 +1,7 @@
 import React from "react";
 import firebase from "../fireStore/FireStore";
 import { Link } from "react-router-dom";
+import "./DashBoard.css";
 
 class Dashboard extends React.Component {
   constructor(props) {
@@ -58,13 +59,20 @@ class Dashboard extends React.Component {
     return (
       <>
         {this.state.qrs.map(qr => (
-          <div>
-            <Link to={`/show/${qr.key}`}>{qr.title}
-              <div id="displayQRCode">
-                <img alt="qrcode" src={qr.generatedQRUrl}></img>
+          <Link to={`/show/${qr.key}`}>
+            <div className="card">
+              <img
+                alt="qrcode"
+                className="qrImage"
+                src={qr.generatedQRUrl}
+              ></img>
+              <div className="container">
+                <h2>
+                  <b>{qr.title}</b>
+                </h2>
               </div>
-            </Link>
-          </div>
+            </div>
+          </Link>
         ))}
       </>
     );
