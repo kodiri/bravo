@@ -1,23 +1,25 @@
-import React, { Component } from 'react';
-import firebase from '../Firebase';
-import { Link } from 'react-router-dom';
+import React, { Component } from "react";
+import firebase from "../fireStore/FireStore";
+import { Link } from "react-router-dom";
 
 class Show extends Component {
-
   constructor(props) {
     super(props);
     this.state = {
-      user: {},
-      key: ''
+      qr: {},
+      key: ""
     };
   }
 
   componentDidMount() {
-    const ref = firebase.firestore().collection('users').doc(this.props.match.params.id);
-    ref.get().then((doc) => {
+    const ref = firebase
+      .firestore()
+      .collection("qrs")
+      .doc(this.props.match.params.id);
+    ref.get().then(doc => {
       if (doc.exists) {
         this.setState({
-          user: doc.data(),
+          qr: doc.data(),
           key: doc.id,
           isLoading: false
         });
@@ -27,51 +29,51 @@ class Show extends Component {
     });
   }
 
-  delete(id){
-    firebase.firestore().collection('users').doc(id).delete().then(() => {
-      console.log("Document successfully deleted!");
-      this.props.history.push("/")
-    }).catch((error) => {
-      console.error("Error removing document: ", error);
-    });
+  delete(id) {
+    firebase
+      .firestore()
+      .collection("qrs")
+      .doc(id)
+      .delete()
+      .then(() => {
+        console.log("Document successfully deleted!");
+        this.props.history.push("/dashboard");
+      })
+      .catch(error => {
+        console.error("Error removing document: ", error);
+      });
   }
 
   render() {
     return (
       <div class="container">
-        <div class="default">
-          <div class="heading">
-          <h4><Link to="/" class="primary">Back to Wallet</Link></h4>
-            <h3 class="title">
-              {this.state.user.title}
-            </h3>
+        <div>
+          <div>
+            <h4>
+              <Link to="/dashboard">Back to Dashboard</Link>
+            </h4>
+            <h3>{this.state.qr.title}</h3>
           </div>
-          <div class="body">
-            <dl>
-              <dt>First Name:</dt>
-              <dd>{this.state.user.firstName}</dd>
-              <dt>Last Name:</dt>
-              <dd>{this.state.user.lastName}</dd>
-              <dt>Email:</dt>
-              <dd>{this.state.user.email}</dd>
-              <dt>Company/Org:</dt>
-              <dd>{this.state.user.companyOrg}</dd>
-              <dt>Job Title:</dt>
-              <dd>{this.state.user.jobTitle}</dd>
-              <dt>Address:</dt>
-              <dd>{this.state.user.address}</dd>
-              <dt>Mob:</dt>
-              <dd>{this.state.user.telTypeCell}</dd>
-              <dt>Tel:</dt>
-              <dd>{this.state.user.telTypeWork}</dd>
-              <dt>Social 1:</dt>
-              <dd>{this.state.user.note}</dd>
-              <dt>Social 2:</dt>
-              <dd>{this.state.user.url}</dd>
-            </dl>
-            <Link to={`/edit/${this.state.key}`} class="success">Edit</Link>&nbsp;
-            <button onClick={this.delete.bind(this, this.state.key)} class="danger">Delete</button>
+          <div>
+            <div>First Name:{this.state.qr.firstName}</div>
+            <div>Last Name:{this.state.qr.lastName}</div>
+            <div>Email:{this.state.qr.email}</div>
+            <div>Company/Org:{this.state.qr.companyOrg}</div>
+            <div>Job Title:{this.state.qr.jobTitle}</div>
+            <div>Address:{this.state.qr.address}</div>
+            <div>Mob:{this.state.qr.telTypeCell}</div>
+            <div>Tel:{this.state.qr.telTypeWork}</div>
+            <div>Social 1:{this.state.qr.note}</div>
+            <div>Social 2:{this.state.qr.url}</div>
+            <div>
+              <img alt="qrcode" src={this.state.qr.generatedQRUrl}></img>
+            </div>
           </div>
+          <button
+            onClick={this.delete.bind(this, this.state.key)}
+          >
+            Delete This Qr Code
+          </button>
         </div>
       </div>
     );
