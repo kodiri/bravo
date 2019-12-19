@@ -3,6 +3,7 @@ import './DashBoard.css';
 import QRPicture from './qrcodepic.png';
 import firebase from "../fireStore/FireStore";
 import { Link } from "react-router-dom";
+import "./DashBoard.css";
 
 class Dashboard extends React.Component {
   constructor(props) {
