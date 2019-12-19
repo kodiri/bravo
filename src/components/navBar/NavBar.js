@@ -19,7 +19,7 @@ function NavBar() {
                                     <button className='buttonNavbar' id='settingsBtn'>Settings</button>
                                 </Link>
                             </div> :
-                            page === '' || page === '/' || page === 'about-app' || page === 'about-us' || page === 'terms' ?
+                            page === '' || page === '/' || page === 'about-app' || page === 'about-us' || page === 'terms' || page === undefined ?
                                 <>
                                     <div>
                                         <Link to='profile-page'>

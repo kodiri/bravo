@@ -19,7 +19,6 @@ export default function App() {
     <Router>
       <div className='App'>
       <Route exact path='/' component={Navbar} />
-      <Route exact path='/' component={Footer} />
         <Route path='/:page' component={Navbar} />
         <Switch>
           <Route exact path='/' component={LandingPage} />
@@ -33,6 +32,7 @@ export default function App() {
           <Route exact path='/:notFound' component={NotFound} />
         </Switch>
         <Route path='/:page' component={Footer} />
+        <Route exact path='/' component={Footer} />
       </div>
     </Router>
   );

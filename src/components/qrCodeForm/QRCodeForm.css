@@ -2,7 +2,9 @@
     background: transparent;
     z-index: -1;
     width: 400px;
-    margin: 0 auto;
+    margin-top: 100px;
+    margin-right: auto;
+    margin-left: auto;
     text-align: left;
 }
 
@@ -10,6 +12,7 @@
     text-align: center;
     color: #B69E3C;
 }
+
 .QRCodeFormContainer input {
     width: 260px;
     height: 40px;
@@ -21,14 +24,15 @@
     letter-spacing: 1px;
     font-size: 12px;
 }
+
 .QRCodeFormContainer label {
     padding: 0 15px;
     display: inline-block;
     width: 100px;
-    /* color: dimgrey; */
     color: #63B6A2;
     font-size: 15px;
 }
+
 .tapInputRow {
     width: 100%;
     align-content: center;
@@ -39,9 +43,7 @@
     
     flex: 8;
 }
-/* .firstName {
-     flex: 3; 
-} */
+
 .QRCodeFormContainer input[type='checkbox'] {
     width: 20px;
     height: 20px;
@@ -74,7 +76,7 @@
     height: 300px;
     margin-right: auto;
     margin-left: auto;
-    margin-bottom: 50px;
+    margin-bottom: 180px;
     color: #B69E3C;
     padding: 15px 0px;
 }
