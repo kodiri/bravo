@@ -1,4 +1,6 @@
 import React from "react";
+import './DashBoard.css';
+import QRPicture from './qrcodepic.png';
 import firebase from "../fireStore/FireStore";
 import { Link } from "react-router-dom";
 
@@ -57,17 +59,36 @@ class Dashboard extends React.Component {
   render() {
     return (
       <>
-        {this.state.qrs.map(qr => (
-          <div>
-            <Link to={`/show/${qr.key}`}>{qr.title}
-              <div id="displayQRCode">
-                <img alt="qrcode" src={qr.generatedQRUrl}></img>
-              </div>
-            </Link>
+      {this.state.qrs.length > 0 ?
+        this.state.qrs.map(qr => (
+          <div className='qrMainContainer'>
+            <div className='qrContainer'>
+                <div>
+                  <Link to={`/show/${qr.key}`}>
+                    <h3>{qr.title}</h3>
+                  </Link>
+                </div>
+                <div>
+                  <Link to={`/show/${qr.key}`}>
+                    <img alt="qrcode" src={qr.generatedQRUrl}></img>
+                  </Link>
+                </div>
+            </div>
           </div>
-        ))}
+        )) :
+        <div className='qrMainContainer'>
+          <div>
+            <h2>Go to Profile Page to generate a new QR Code</h2>
+          </div>
+          <div>
+            <img id='qrIcon'src={QRPicture} alt='qrcode icon'/>
+          </div>
+        </div>
+      }
       </>
     );
   }
 }
 export default Dashboard;
+
+
