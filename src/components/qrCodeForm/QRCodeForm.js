@@ -264,7 +264,7 @@ export default function QRCodeForm() {
         </div>
         <div id='displayQRCode'>
             {
-                qrButtonPressed ? <img alt='qrcode' src={qrUrl}></img> : <h2>No QR Code yet!</h2>
+                qrButtonPressed ? <img alt='qrcode' src={qrUrl}></img> : <h2>QR Code not Generated!</h2>
             }
         </div>
     </>
