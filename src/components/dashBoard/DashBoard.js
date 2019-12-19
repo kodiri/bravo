@@ -58,16 +58,14 @@ class Dashboard extends React.Component {
     return (
       <>
         {this.state.qrs.map(qr => (
-            <div>
-              <Link to={`/show/${qr.key}`}>{qr.title}
-                <div id="displayQRCode">
-                  <img alt="qrcode" src={qr.generatedQRUrl}></img>
-                </div>
-                </Link>
-            </div>
-
+          <div>
+            <Link to={`/show/${qr.key}`}>{qr.title}
+              <div id="displayQRCode">
+                <img alt="qrcode" src={qr.generatedQRUrl}></img>
+              </div>
+            </Link>
+          </div>
         ))}
-        
       </>
     );
   }
