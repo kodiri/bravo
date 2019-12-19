@@ -13,7 +13,7 @@ measurementId: process.env.REACT_APP_MEASUREMENT_ID
 };
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
-firebase.analytics();
+// firebase.analytics();
 
 export default firebase;
 
