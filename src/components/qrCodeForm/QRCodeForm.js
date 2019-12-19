@@ -52,14 +52,16 @@ export default function QRCodeForm() {
          + qrFirstName
          + '%0d%0aORG%3a'
          + qrCompanyOrg
-         + '.%0d%0aTITLE%3a'
+         + '%0d%0aTITLE%3a'
          + qrJobTitle
          + '%0d%0aEMAIL%3a'
          + qrEmail
          + '%0d%0aTEL%3bTYPE%3dCELL%3a'
          + qrtelTypeCell
-         + '%0d%0aTEL%3bTYPE%3dWORK%2c%0d%0aVOICE%3a'
+         + '%0d%0aTEL%3bTYPE%3dWORK%2c'
          + qrtelTypeWork
+         + '%0d%0aVOICE%3a'
+         + ''
          + '%0d%0aNOTE%3a'
          + qrNote
          + '%0d%0aURL%3a'
@@ -72,7 +74,7 @@ export default function QRCodeForm() {
     return (
         <>
         <div className='QRCodeFormContainer'>
-            <h2>TAP QR Code Form</h2>
+            <h2>Profile Details Form</h2>
             <p>Tick checkbox to include field in QR Code</p>
             <form onSubmit={handleSubmit}>
                 <div className='tapInputRow'>
@@ -262,7 +264,7 @@ export default function QRCodeForm() {
         </div>
         <div id='displayQRCode'>
             {
-                qrButtonPressed ? <img alt='qrcode' src={qrUrl}></img> : <h2>No QR Code yet!</h2>
+                qrButtonPressed ? <img alt='qrcode' src={qrUrl}></img> : <h2>QR Code not Generated!</h2>
             }
         </div>
     </>
