@@ -13,6 +13,7 @@ import Settings from './components/settings/Settings';
 import NotFound from './components/notFound/NotFound';
 import Login from './components/login/Login';
 import Signup from './components/signUp/SignUp';
+import Show from './components/fireStore/Show'
 
 
 export default function App() {
@@ -30,6 +31,7 @@ export default function App() {
           <Route exact path='/login' component={Login} />
           <Route exact path='/signup' component={Signup} />
           <Route exact path='/dashboard' component={Dashboard} />
+          <Route exact path='/show/:id' component={Show} />
           <Route exact path='/profile-page' component={ProfilePage} />
           <Route exact path='/settings' component={Settings} />
           <Route exact path='/:notFound' component={NotFound} />
