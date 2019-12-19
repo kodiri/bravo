@@ -317,7 +317,7 @@ export default function QRCodeForm() {
       <div id="displayQRCode">
         { qrButtonPressed ? (
             <>
-                <h2>Here is yor Qr code. It has been saved to the dashboard.</h2>
+                <h2>Your Qr code has been saved to the Dashboard</h2>
                 <img alt="qrcode" src={qrUrl}></img>
             </>
         ) : (

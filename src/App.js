@@ -11,8 +11,6 @@ import Dashboard from './components/dashBoard/DashBoard';
 import ProfilePage from './components/profilePage/ProfilePage';
 import Settings from './components/settings/Settings';
 import NotFound from './components/notFound/NotFound';
-import Login from './components/login/Login';
-import Signup from './components/signUp/SignUp';
 import Show from './components/fireStore/Show'
 
 
@@ -28,8 +26,6 @@ export default function App() {
           <Route exact path='/about-app' component={AboutApp} />
           <Route exact path='/about-us' component={AboutUs} />
           <Route exact path='/terms' component={Terms} />
-          <Route exact path='/login' component={Login} />
-          <Route exact path='/signup' component={Signup} />
           <Route exact path='/dashboard' component={Dashboard} />
           <Route exact path='/show/:id' component={Show} />
           <Route exact path='/profile-page' component={ProfilePage} />

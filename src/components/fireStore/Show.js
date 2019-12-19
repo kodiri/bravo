@@ -52,7 +52,7 @@ class Show extends Component {
             <h4>
               <Link to="/dashboard">Back to Dashboard</Link>
             </h4>
-            <h3>{this.state.qr.title}</h3>
+            <h2>{this.state.qr.title}</h2>
           </div>
           <div>
             <div>First Name:{this.state.qr.firstName}</div>

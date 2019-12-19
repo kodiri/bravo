@@ -1,3 +1,24 @@
+
+/*
+.qrMainContainer {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(46, 160, 160, 0);
+    
+}
+#qrIcon {
+    width: 400px;
+    height: auto;
+}
+
+@media only screen and (max-width: 700px) {
+    #qrIcon{
+        width: 150px;
+        height: auto;
+    }
+}
+*/
+
 .card {
     display: inline-block;
     background-color: white;
@@ -16,3 +37,4 @@
   .qrImage {
     width:75%
   }
+
