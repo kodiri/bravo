@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const Settings = () => {
     return (
         <div className='mainContainer'>
-            <div className='container'>
+            <div className='containerSettings'>
                 <div className='aboutAppContainer'>
                     <h2>About App</h2>
                     <Link to='/about-app'>
