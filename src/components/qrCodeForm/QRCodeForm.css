@@ -11,6 +11,13 @@
     text-align: center;
     color: #B69E3C;
 }
+
+.QRCodeFormContainer p {
+    text-align: center;
+    color: #B69E3C;
+    font-size: 18px;
+}
+
 .QRCodeFormContainer input {
     width: 260px;
     height: 40px;
@@ -21,14 +28,14 @@
     font-family: 'Raleway', sans-serif;
     letter-spacing: 1px;
     font-size: 12px;
+    align-content: center;
 }
 .QRCodeFormContainer label {
-    padding: 0 15px;
     display: inline-block;
     width: 100px;
     /* color: dimgrey; */
     color: #63B6A2;
-    font-size: 15px;
+    font-size: 16px;
 }
 .tapInputRow {
     width: 100%;

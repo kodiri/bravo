@@ -52,7 +52,7 @@ export default function QRCodeForm() {
          + qrFirstName
          + '%0d%0aORG%3a'
          + qrCompanyOrg
-         + '.%0d%0aTITLE%3a'
+         + '%0d%0aTITLE%3a'
          + qrJobTitle
          + '%0d%0aEMAIL%3a'
          + qrEmail
@@ -76,7 +76,7 @@ export default function QRCodeForm() {
             <p>Tick checkbox to include field in QR Code</p>
             <form onSubmit={handleSubmit}>
                 <div className='tapInputRow'>
-                    <label htmlFor='firstName'>First name: </label>
+                    <label htmlFor='firstName'>First name</label>
                     <input 
                         className='tapInput'
                         id='firstName'
@@ -241,7 +241,7 @@ export default function QRCodeForm() {
                         className='tapInput'                    
                         id='note'
                         type='text'
-                        placeholder='Add. Social Media URL'
+                        placeholder='Social Media URL'
                         name='note'
                         value={note}
                         onChange={(e)=> setNote(e.target.value)}
