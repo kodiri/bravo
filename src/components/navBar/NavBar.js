@@ -5,7 +5,6 @@ import Logo from './TAP.png';
 
 function NavBar() {
     let { page } = useParams();
-    console.log('la url navbar es: ', { page });
     return (
         <>
             <nav id='navbar'>
@@ -14,25 +13,26 @@ function NavBar() {
                 </Link>
                 <div className='links'>
                     {
-                        page === 'dashboard' || page === 'profile-page' || page === 'settings' ?
+                        page === 'dashboard' || page === 'profile-page' || page === 'settings' || page === 'show' ?
                             <div>
                                 <Link to='settings'>
-                                    <button className='buttonNavbar'>Settings</button>
+                                    <button className='buttonNavbar' id='settingsBtn'>Settings</button>
                                 </Link>
                             </div> :
-                            <>
-                                <div>
-                                    <Link to='dashboard'>
-                                        <button className='buttonNavbar'>Dashboard</button>
-                                    </Link>
-                                </div>
-                                <div>
-                                    <Link to='profile-page'>
-                                        <button className='buttonNavbar'>Profile Page</button>
-                                    </Link>
-                                </div>
-                            </>
-
+                            page === '' || page === '/' || page === 'about-app' || page === 'about-us' || page === 'terms' || page === undefined ?
+                                <>
+                                    <div>
+                                        <Link to='profile-page'>
+                                            <button className='buttonNavbar'>Profile Page</button>
+                                        </Link>
+                                    </div>
+                                    <div>
+                                        <Link to='dashboard'>
+                                            <button className='buttonNavbar'>Dashboard</button>
+                                        </Link>
+                                    </div>
+                                </> :
+                                <></>
                     }
                 </div>
             </nav>
@@ -40,5 +40,3 @@ function NavBar() {
     );
 }
 export default NavBar;
-
-// page === undefined || page === 'about-app' || page === 'about-us' || page === 'terms'

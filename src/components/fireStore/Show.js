@@ -1,23 +1,26 @@
-import React, { Component } from 'react';
-import firebase from '../Firebase';
-import { Link } from 'react-router-dom';
+import React, { Component } from "react";
+import firebase from "../fireStore/FireStore";
+import { Link } from "react-router-dom";
+import "./Show.css";
 
 class Show extends Component {
-
   constructor(props) {
     super(props);
     this.state = {
-      user: {},
-      key: ''
+      qr: {},
+      key: ""
     };
   }
 
   componentDidMount() {
-    const ref = firebase.firestore().collection('users').doc(this.props.match.params.id);
-    ref.get().then((doc) => {
+    const ref = firebase
+      .firestore()
+      .collection("qrs")
+      .doc(this.props.match.params.id);
+    ref.get().then(doc => {
       if (doc.exists) {
         this.setState({
-          user: doc.data(),
+          qr: doc.data(),
           key: doc.id,
           isLoading: false
         });
@@ -27,50 +30,86 @@ class Show extends Component {
     });
   }
 
-  delete(id){
-    firebase.firestore().collection('users').doc(id).delete().then(() => {
-      console.log("Document successfully deleted!");
-      this.props.history.push("/")
-    }).catch((error) => {
-      console.error("Error removing document: ", error);
-    });
+  delete(id) {
+    firebase
+      .firestore()
+      .collection("qrs")
+      .doc(id)
+      .delete()
+      .then(() => {
+        console.log("Document successfully deleted!");
+        this.props.history.push("/dashboard");
+      })
+      .catch(error => {
+        console.error("Error removing document: ", error);
+      });
   }
-
   render() {
     return (
-      <div class="container">
-        <div class="default">
-          <div class="heading">
-          <h4><Link to="/" class="primary">Back to Wallet</Link></h4>
-            <h3 class="title">
-              {this.state.user.title}
-            </h3>
-          </div>
-          <div class="body">
-            <dl>
-              <dt>First Name:</dt>
-              <dd>{this.state.user.firstName}</dd>
-              <dt>Last Name:</dt>
-              <dd>{this.state.user.lastName}</dd>
-              <dt>Email:</dt>
-              <dd>{this.state.user.email}</dd>
-              <dt>Company/Org:</dt>
-              <dd>{this.state.user.companyOrg}</dd>
-              <dt>Job Title:</dt>
-              <dd>{this.state.user.jobTitle}</dd>
-              <dt>Address:</dt>
-              <dd>{this.state.user.address}</dd>
-              <dt>Mob:</dt>
-              <dd>{this.state.user.telTypeCell}</dd>
-              <dt>Tel:</dt>
-              <dd>{this.state.user.telTypeWork}</dd>
-              <dt>Social 1:</dt>
-              <dd>{this.state.user.note}</dd>
-              <dt>Social 2:</dt>
-              <dd>{this.state.user.url}</dd>
-            </dl>
-            <Link to={`/edit/${this.state.key}`} class="success">Edit</Link>&nbsp;
-            <button onClick={this.delete.bind(this, this.state.key)} class="danger">Delete</button>
+      <div>
+        <div>
+          <h4>
+            <Link to="/dashboard">Back to Dashboard</Link>
+          </h4>
+          <div className="card">
+            <img
+              alt="qrcode"
+              className="qrImage"
+              src={this.state.qr.generatedQRUrl}
+            ></img>
+            <div className="container">
+              <h2>
+                <b>{this.state.qr.title}</b>
+              </h2>
+              <table>
+                <tr>
+                  <th>First Name:</th>
+                  <td>{this.state.qr.firstName}</td>
+                </tr>
+                <tr>
+                  <th>Last Name</th>
+                  <td>{this.state.qr.lastName}</td>
+                </tr>
+                <tr>
+                  <th>Email:</th>
+                  <td>{this.state.qr.email}</td>
+                </tr>
+                <tr>
+                  <th>Company/Org:</th>
+                  <td>{this.state.qr.companyOrg}</td>
+                </tr>
+                <tr>
+                  <th>Job Title:</th>
+                  <td>{this.state.qr.jobTitle}</td>
+                </tr>
+                <tr>
+                  <th>Address</th>
+                  <td>{this.state.qr.address}</td>
+                </tr>
+                <tr>
+                  <th>Mob:</th>
+                  <td>{this.state.qr.telTypeCell}</td>
+                </tr>
+                <tr>
+                  <th>Tel:</th>
+                  <td>{this.state.qr.telTypeWork}</td>
+                </tr>
+                <tr>
+                  <th>Social 1:</th>
+                  <td>{this.state.qr.note}</td>
+                </tr>
+                <tr>
+                  <th>Social 2:</th>
+                  <td>{this.state.qr.url}</td>
+                </tr>
+              </table>
+            </div>
+            <button
+              onClick={this.delete.bind(this, this.state.key)}
+              className="button"
+            >
+              Delete QR
+            </button>
           </div>
         </div>
       </div>

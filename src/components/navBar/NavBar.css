@@ -1,5 +1,6 @@
 #navbar {
     width: 100%;
+    height: 70px;
     display: flex;
     background-color: rgb(181, 228, 228);
     justify-content: flex-end;
@@ -30,6 +31,14 @@
     transition: 0.3s;
 }
 
+#settingsBtn {
+    color: rgb(121, 118, 109);
+}
+#settingsBtn:hover {
+    background-color:  rgb(182, 202, 202);
+    color: rgb(121, 118, 109);
+}
+
 .TAPLogo {
     position: absolute;
     left: 46%; 
@@ -38,7 +47,7 @@
     height: 50px;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 800px) {
     .TAPLogo {
         width: 120px;
         left: 1%;
@@ -46,5 +55,10 @@
     .links {
         display: flex;
         justify-content: space-between
+    }
+    .buttonNavbar {
+        width: 100px;
+        height: 70px;
+        font-size: 1.2em;
     }
 }

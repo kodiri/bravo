@@ -4,8 +4,6 @@ import './Footer.css';
 
 function Footer() {
     let { page } = useParams();
-    console.log('la url footer es: ', {page});
-
     let history = useHistory();
     function goBackHandle() {
         history.goBack();
@@ -27,7 +25,8 @@ function Footer() {
                         </Link>
                         <Link className='linksFooter' to='/terms'>
                             <div>
-                                <button className='buttonFooter'>Terms & Conditions</button>
+                                <button className='buttonFooter' id='tcLong'>Terms & Conditions</button>
+                                <button className='buttonFooter' id='tcShort'>T & C</button>
                             </div>
                         </Link>
                     </footer> :
