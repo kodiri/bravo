@@ -52,7 +52,7 @@ export default function QRCodeForm() {
       .then(docRef => {
         this.setState({
             generatedQRUrl,
-          title: '',
+          title: "",
           firstName: "",
           lastName: "",
           email: "",
@@ -91,13 +91,13 @@ export default function QRCodeForm() {
       qrFirstName +
       "%0d%0aORG%3a" +
       qrCompanyOrg +
-      ".%0d%0aTITLE%3a" +
+      "%0d%0aTITLE%3a" +
       qrJobTitle +
       "%0d%0aEMAIL%3a" +
       qrEmail +
       "%0d%0aTEL%3bTYPE%3dCELL%3a" +
       qrtelTypeCell +
-      "%0d%0aTEL%3bTYPE%3dWORK%2c%0d%0aVOICE%3a" +
+      "%0d%0aTEL%3bTYPE%3dWORK%2c%0d%0a%3a" +
       qrtelTypeWork +
       "%0d%0aNOTE%3a" +
       qrNote +
@@ -244,7 +244,7 @@ export default function QRCodeForm() {
             <input
               className="tapInput"
               id="telTypeCell"
-              type="number"
+              type="tel"
               placeholder="Mobile number"
               name="telTypeCell"
               value={telTypeCell}
@@ -262,7 +262,7 @@ export default function QRCodeForm() {
             <input
               className="tapInput"
               id="telTypeWork"
-              type="number"
+              type="tel"
               placeholder="Work number"
               name="telTypeWork"
               value={telTypeWork}
@@ -299,7 +299,7 @@ export default function QRCodeForm() {
               className="tapInput"
               id="note"
               type="text"
-              placeholder="Add. Social Media URL"
+              placeholder="Social Media URL"
               name="note"
               value={note}
               onChange={e => setNote(e.target.value)}
