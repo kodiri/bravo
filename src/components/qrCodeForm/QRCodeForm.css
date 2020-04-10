@@ -23,14 +23,14 @@
     font-family: 'Raleway', sans-serif;
     letter-spacing: 1px;
     font-size: 12px;
+    align-content: center;
 }
 
 .QRCodeFormContainer label {
-    padding: 0 15px;
     display: inline-block;
     width: 100px;
     color: #63B6A2;
-    font-size: 15px;
+    font-size: 16px;
 }
 
 .tapInputRow {
